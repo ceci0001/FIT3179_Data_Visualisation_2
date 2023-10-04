@@ -19,6 +19,6 @@
 }
 
 #choropleth_map{
-	text-align: center;
-	display: block;
+	display: flex;
+	justify-content: center;
 }
