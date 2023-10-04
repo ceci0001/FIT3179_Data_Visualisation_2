@@ -1,0 +1,134 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Population, Urban Population and Density of the Top 20 Countries With the Highest Population", 
+  "data": {
+    "url": "../data/world_clean.csv", 
+    "format": {"parse": {"Population": "number", 
+                          "Density": "number", 
+                          "Urban_population": "number"}}
+  },
+  "width": 700,
+  "height": 400,
+  "transform": [
+    {"filter": "isValid(datum.Population)"}, 
+    {"filter": "isValid(datum.Density)"}, 
+    {"filter": "isValid(datum.Urban_population)"}, 
+    {"window": [{"op": "rank", "as": "rank"}], "sort": [{"field": "Population", "order": "descending"}]},
+    {"filter": "datum.rank <= 20"}, 
+    {"filter": "datum['Population']"},
+    {"window": [{"op": "count", "as": "index"}]},
+    {"fold": ["Population", "Urban_population", "Density"]},
+    {
+      "joinaggregate": [
+        {"op": "min", "field": "value", "as": "min"},
+        {"op": "max", "field": "value", "as": "max"}
+      ],
+      "groupby": ["key"]
+    },
+    {
+      "calculate": "(datum.value - datum.min) / (datum.max-datum.min)",
+      "as": "norm_val"
+    },
+    {
+      "calculate": "(datum.min + datum.max) / 2",
+      "as": "mid"
+    }
+  ],
+  "layer": [{
+    "mark": {"type": "rule", "color": "#ccc"},
+    "encoding": {
+      "detail": {"aggregate": "count"},
+      "x": {"field": "key"}
+    }
+  }, {
+    "mark": "line", 
+    "params": [
+      {
+        "name": "Country_Highlight", 
+        "select": {"type": "point", "fields": ["Country"]}, 
+        "bind": "legend"
+      }
+    ], 
+    "encoding": {
+      "color": {"type": "nominal", "field": "Country", 
+        "scale": {
+        "range": ["#fab4d5", "#bfcaf2", "#dcbfe4", "#f6b6d7", "#c3c9f0", "#d8c1e6", 
+        "#f1b8d9", "#c7c7ee", "#dfbee2", "#eeb9db", "#cdc5ec", "#d5c2e8", 
+        "#ecbadc", "#cec4eb", "#e1bee1", "#e9bbdd", "#cfc4ea", "#d2c3e9", 
+        "#e7bcde", "#d0c4ea", "#e4bddf"]
+        }
+      }, 
+    "opacity": {
+      "condition": {"param": "Country_Highlight", "value": 1},
+      "value": 0.2
+  }, 
+      "detail": {"type": "nominal", "field": "index"},
+      "x": {"type": "nominal", "field": "key"},
+      "y": {"type": "quantitative", "field": "norm_val", "axis": null},
+      "tooltip": [{
+        "type": "nominal", 
+        "field": "Country", 
+        "title": "Country"
+      }, {
+        "type": "quantitative",
+        "field": "Population", 
+        "title": "Population"
+      }, {
+        "type": "quantitative",
+        "field": "Urban_population", 
+        "title": "Urban Population"
+      }, {
+        "type": "quantitative",
+        "field": "Density", 
+        "title": "Density"
+      }]
+    }
+  }, {
+    "encoding": {
+      "x": {"type": "nominal", "field": "key"},
+      "y": {"value": 0}
+    },
+    "layer": [{
+      "mark": {"type": "text", "style": "label"},
+      "encoding": {
+        "text": {"aggregate": "max", "field": "max"}
+      }
+    }, {
+      "mark": {"type": "tick", "style": "tick", "size": 8, "color": "#ccc"}
+    }]
+  }, {
+    "encoding": {
+      "x": {"type": "nominal", "field": "key"},
+      "y": {"value": 150}
+    },
+    "layer": [{
+      "mark": {"type": "text", "style": "label"},
+      "encoding": {
+        "text": {"aggregate": "min", "field": "mid"}
+      }
+    }, {
+      "mark": {"type": "tick", "style": "tick", "size": 8, "color": "#ccc"}
+    }]
+  }, {
+    "encoding": {
+      "x": {"type": "nominal", "field": "key"},
+      "y": {"value": 300}
+    },
+    "layer": [{
+      "mark": {"type": "text", "style": "label"},
+      "encoding": {
+        "text": {"aggregate": "min", "field": "min"}
+      }
+    }, {
+      "mark": {"type": "tick", "style": "tick", "size": 8, "color": "#ccc"}
+    }]
+  }],
+  "config": {
+    "axisX": {"domain": false, "labelAngle": 0, "tickColor": "#ccc", "title": null},
+    "view": {"stroke": null},
+    "style": {
+      "label": {"baseline": "middle", "align": "right", "dx": -5},
+      "tick": {"orient": "horizontal"}
+    }
+  }
+}

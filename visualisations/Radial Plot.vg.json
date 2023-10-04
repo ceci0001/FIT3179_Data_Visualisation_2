@@ -1,0 +1,51 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Top 20 Countries With Highest Unemployment Rate (In %)",
+    "width": 600,
+    "height": 400,
+    "data": {
+      "url": "../data/world_clean.csv",
+      "format": {"parse": {"Unemployment_rate": "number"}}
+    },
+    "transform": [
+        {"filter": "isValid(datum.Unemployment_rate)"},
+        {"window": [{"op": "rank", "as": "rank"}], "sort": [{"field": "Unemployment_rate", "order": "descending"}]},
+        {"filter": "datum.rank <= 20"}
+      ], 
+    "layer": [{
+      "mark": {"type": "arc", "innerRadius": 20, "stroke": "#fff"}, 
+      "params": [
+        {
+          "name": "Country_Highlight", 
+          "select": {"type": "point", "fields": ["Country"]}, 
+          "bind": "legend"
+        }
+      ]
+    },{
+      "mark": {"type": "text", "radiusOffset": 10, "fill": "gray"},
+      "encoding": {
+        "text": {"field": "Unemployment_rate", "type": "quantitative"}
+      }
+    }],
+    "encoding": {
+      "theta": {"field": "Unemployment_rate", "type": "quantitative", "stack": true},
+      "radius": {"field": "Unemployment_rate", "scale": {"type": "sqrt", "zero": true, "rangeMin": 20}},
+      "color": {"field": "Country", "type": "nominal", 
+      "scale": {
+        "range": ["#fab4d5", "#bfcaf2", "#dcbfe4", "#f6b6d7", "#c3c9f0", "#d8c1e6", 
+        "#f1b8d9", "#c7c7ee", "#dfbee2", "#eeb9db", "#cdc5ec", "#d5c2e8", 
+        "#ecbadc", "#cec4eb", "#e1bee1", "#e9bbdd", "#cfc4ea", "#d2c3e9", 
+        "#e7bcde", "#d0c4ea", "#e4bddf"]
+        }
+      }, 
+      "tooltip": [
+        {"field": "Country", "type": "nominal", "title":
+        "Country"},
+        {"field": "Unemployment_rate", "type": "quantitative", "title": "Unemployement Rate (In %)"}
+    ],
+    "opacity": {
+      "condition": {"param": "Country_Highlight", "value": 1},
+      "value": 0.2
+    }
+    }
+  }

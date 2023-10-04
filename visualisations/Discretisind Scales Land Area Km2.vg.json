@@ -1,0 +1,125 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Horizontally concatenated charts that show different types of discretizing scales.",
+  "data": {
+    "url": "../data/world_clean.csv", 
+    "format": {"parse": {"Land_Area_Km2": "number"}}
+  }, 
+  "transform": [
+    {"filter": "isValid(datum.Land_Area_Km2)"},
+    {"window": [{"op": "rank", "as": "rank"}], "sort": [{"field": "Land_Area_Km2", "order": "descending"}]},
+    {"filter": "datum.rank <= 20"}
+  ], 
+  "hconcat": [
+    {
+      "mark": "circle",
+      "encoding": {
+        "y": {
+          "field": "Land_Area_Km2",
+          "type": "nominal",
+          "sort": null,
+          "axis": {
+            "ticks": false,
+            "domain": false,
+            "title": null
+          }
+        },
+        "size": {
+          "field": "Land_Area_Km2",
+          "type": "quantitative",
+          "scale": {
+            "type": "quantize"
+          }
+        },
+        "color": {
+          "field": "Land_Area_Km2",
+          "type": "quantitative",
+          "scale": {
+            "type": "quantize",
+            "zero": true
+          },
+          "legend": {
+            "title": "Quantize"
+          }
+        }
+      }
+    },
+    {
+      "mark": "circle",
+      "encoding": {
+        "y": {
+          "field": "Land_Area_Km2",
+          "type": "nominal",
+          "sort": null,
+          "axis": {
+            "ticks": false,
+            "domain": false,
+            "title": null
+          }
+        },
+        "size": {
+          "field": "Land_Area_Km2",
+          "type": "quantitative",
+          "scale": {
+            "type": "quantile",
+            "range": [80, 160, 240, 320, 400]
+          }
+        },
+        "color": {
+          "field": "Land_Area_Km2",
+          "type": "quantitative",
+          "scale": {
+            "type": "quantile",
+            "scheme": "magma"
+          },
+          "legend": {
+            "format": "d",
+            "title": "Quantile"
+          }
+        }
+      }
+    },
+    {
+      "mark": "circle",
+      "encoding": {
+        "y": {
+          "field": "Land_Area_Km2",
+          "type": "nominal",
+          "sort": null,
+          "axis": {
+            "ticks": false,
+            "domain": false,
+            "title": null
+          }
+        },
+        "size": {
+          "field": "Land_Area_Km2",
+          "type": "quantitative",
+          "scale": {
+            "type": "threshold",
+            "domain": [2000000, 4000000, 6000000 ,8000000, 10000000, 17000000],
+            "range": [80, 130, 180, 230, 280, 330, 380]
+          }
+        },
+        "color": {
+          "field": "Land_Area_Km2",
+          "type": "quantitative",
+          "scale": {
+            "type": "threshold",
+            "domain": [2000000, 4000000, 6000000 ,8000000, 10000000, 17000000],
+            "scheme": "viridis"
+          },
+          "legend": {
+            "title": "Threshold"
+          }
+        }
+      }
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "color": "independent",
+      "size": "independent"
+    }
+  }
+}

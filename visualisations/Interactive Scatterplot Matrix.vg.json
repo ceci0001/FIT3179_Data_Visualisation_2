@@ -1,0 +1,77 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Birth Rate, Fertility Rate, Infant Mortality, Maternal Mortality Ratio and Life Expectancy of the Top 20 Countries With Highest Population",
+  "repeat": {
+    "row": ["Birth_Rate", "Fertility_Rate", "Infant_Mortality", "Maternal_Mortality_Ratio", "Life_Expectancy"],
+    "column": ["Life_Expectancy", "Maternal_Mortality_Ratio", "Infant_Mortality", "Fertility_Rate", "Birth_Rate"]
+  },
+  "spec": {
+    "data": {
+      "url": "../data/world_clean.csv",
+      "format": {"parse": {"Birth_Rate": "number", 
+                          "Fertility_Rate": "number", 
+                          "Infant_Mortality": "number", 
+                          "Maternal_Mortality_Ratio": "number", 
+                          "Life_Expectancy": "number", 
+                          "Population": "number"}}
+    },
+    "transform": [
+        {"filter": "isValid(datum.Population)"},
+        {"window": [{"op": "rank", "as": "rank"}], "sort": [{"field": "Population", "order": "descending"}]},
+        {"filter": "datum.rank <= 20"}],
+    "mark": {
+        "type": "point", 
+        "filled": false, 
+        "size": 100},
+    "params": [
+      {
+        "name": "brush",
+        "select": {
+          "type": "interval",
+          "resolve": "union",
+          "on": "[mousedown[event.shiftKey], window:mouseup] > window:mousemove!",
+          "translate": "[mousedown[event.shiftKey], window:mouseup] > window:mousemove!",
+          "zoom": "wheel![event.shiftKey]"
+        }
+      },
+      {
+        "name": "grid",
+        "select": {
+          "type": "interval",
+          "resolve": "global",
+          "translate": "[mousedown[!event.shiftKey], window:mouseup] > window:mousemove!",
+          "zoom": "wheel![!event.shiftKey]"
+        },
+        "bind": "scales"
+      }
+    ],
+    "encoding": {
+      "x": {"field": {"repeat": "column"}, "type": "quantitative"},
+      "y": {
+        "field": {"repeat": "row"},
+        "type": "quantitative",
+        "axis": {"minExtent": 30}
+      },
+      "color": {
+        "condition": {
+          "param": "brush",
+          "field": "Country", 
+          "scale": {
+            "range": ["#fab4d5", "#bfcaf2", "#dcbfe4", "#f6b6d7", "#c3c9f0", "#d8c1e6", 
+            "#f1b8d9", "#c7c7ee", "#dfbee2", "#eeb9db", "#cdc5ec", "#d5c2e8", 
+            "#ecbadc", "#cec4eb", "#e1bee1", "#e9bbdd", "#cfc4ea", "#d2c3e9", 
+            "#e7bcde", "#d0c4ea", "#e4bddf"]
+            }, 
+            "legend": null
+        },
+        "value": "grey"
+      }, 
+      "tooltip": [
+        {"field": "Country", "type": "nominal", "title":
+        "Country"},
+        {"field": {"repeat": "row"}, "type": "quantitative"}, 
+        {"field": {"repeat": "column"}, "type": "quantitative"}
+    ]
+    }
+  }
+}

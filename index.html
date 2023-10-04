@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Interactive Map with Vega-Lite</title>
+  <!-- Include Vega and Vega-Lite scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+  <link rel="stylesheet" type="text/css" href="./styles.css" media="all">
+</head>
+<body>
+  <!-- Container for the map -->
+  <div id="choropleth_map"></div>
+
+  <script type="text/javascript">
+
+    var choropleth_map = "visualisations/choropleth_map.vg.json";
+
+    vegaEmbed('#choropleth_map', choropleth_map).then(function(result) {
+
+    }).catch(console.error);
+  </script>
+
+</body>
+</html>
