@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Global Country Density Information",
-  "width": 800,
-  "height": 400,
+  "width": 1000,
+  "height": 500,
   "projection": {"type": "identity", "reflectY": true},
   "data": {
     "url": "./data/ne_110m_admin_0_countries.json",
@@ -43,9 +43,9 @@
       "mark": {"type": "rect", "fill": "lightblue"},
       "encoding": {
         "x": {"value": 0}, 
-        "x2": {"value": 800}, 
+        "x2": {"value": 1000}, 
         "y": {"value": 0},
-        "y2": {"value": 400}
+        "y2": {"value": 500}
       }
     },
     {
