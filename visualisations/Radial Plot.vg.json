@@ -4,7 +4,7 @@
     "width": 600,
     "height": 400,
     "data": {
-      "url": "../data/world_clean.csv",
+      "url": "./data/world_clean.csv",
       "format": {"parse": {"Unemployment_rate": "number"}}
     },
     "transform": [

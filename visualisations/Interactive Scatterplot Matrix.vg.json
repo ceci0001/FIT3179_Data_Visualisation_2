@@ -7,7 +7,7 @@
   },
   "spec": {
     "data": {
-      "url": "../data/world_clean.csv",
+      "url": "./data/world_clean.csv",
       "format": {"parse": {"Birth_Rate": "number", 
                           "Fertility_Rate": "number", 
                           "Infant_Mortality": "number", 

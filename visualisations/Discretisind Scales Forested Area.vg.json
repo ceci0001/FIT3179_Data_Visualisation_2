@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Horizontally concatenated charts that show different types of discretizing scales.",
   "data": {
-    "url": "../data/world_clean.csv", 
+    "url": "./data/world_clean.csv", 
     "format": {"parse": {"Forested_Area": "number"}}
   }, 
   "transform": [
