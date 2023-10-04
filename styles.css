@@ -32,10 +32,6 @@
 	margin-top: 50px;
 }
 
-#pure-u-1-2 {
-	margin-left: 20px;
-}
-
-#pure-u-1 {
-	margin-left: 50px;
+#center {
+	justify-content: center;
 }
