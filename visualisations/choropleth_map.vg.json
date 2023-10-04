@@ -14,7 +14,7 @@
       "bind": {
         "input": "range",
         "min": 0,
-        "max": 800,
+        "max": 660,
         "step": 10,
         "name": "Minimum Density: "
       }
