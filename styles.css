@@ -32,6 +32,12 @@
 	margin-top: 50px;
 }
 
-#center {
+.pure-u-1-2 {
+	display: flex;
+	justify-content: center;
+}
+
+.pure-u-1 {
+	display: flex;
 	justify-content: center;
 }
