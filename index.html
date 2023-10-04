@@ -2,19 +2,29 @@
 <html lang="en">
 
 <head>
+
   <title>Interactive Map with Vega-Lite</title>
+
   <!-- Include Vega and Vega-Lite scripts -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 
   <link rel="stylesheet" type="text/css" href="styles.css" media="all">
+
 </head>
+
 <body>
+
   <div id="header">
     <h1>Global Country Information</h1>
   </div>
-  <!-- Container for the map -->
+
+  <div id="map_desc">
+    Ever wonder about the various informations of the different countries around the world? Here I present to 
+    you informations such as CO2 Emission, Armed Forces Size, Unemployment Rate and many more!    
+  </div>
+
   <div id="choropleth_map"></div>
 
   <script type="text/javascript">
