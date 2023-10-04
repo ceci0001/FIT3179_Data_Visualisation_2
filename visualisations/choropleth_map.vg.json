@@ -82,7 +82,7 @@
         "longitude": {"field": "Longitude", "type": "quantitative"},
         "latitude": {"field": "Latitude", "type": "quantitative"},
         "size": {"field": "Population", "type": "quantitative"},
-        "color": {"legend": {"orient": "bottom"}},
+        "color": {"legend": {"orient": "bottom-right"}},
         "tooltip": [
           {"field": "properties.NAME", "type": "nominal", "title": "Country"},
           {"field": "Population", "type": "quantitative", "title": "Population"}
