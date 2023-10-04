@@ -17,3 +17,7 @@
 	font-size: 20px;
 	margin-bottom: 10px;
 }
+
+#choropleth_map{
+	text-align: center;
+}
