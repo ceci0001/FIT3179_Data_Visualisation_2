@@ -20,4 +20,5 @@
 
 #choropleth_map{
 	text-align: center;
+	display: block;
 }
