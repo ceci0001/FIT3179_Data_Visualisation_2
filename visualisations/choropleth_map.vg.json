@@ -63,7 +63,8 @@
             "type": "threshold",
             "domain": [25, 50, 75, 150, 300],
             "range": ["#fab4d5", "#ecbadc", "#e1bee1", "#d5c2e8", "#cec4eb", "#bfcaf2"]
-          }
+          }, 
+          "legend": {"orient": "bottom"}
         },
         "tooltip": [
           {"field": "properties.NAME", "type": "nominal", "title": "Country"},
