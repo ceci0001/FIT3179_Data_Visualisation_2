@@ -33,11 +33,9 @@
 }
 
 #pure-u-1-2 {
-	display: flex;
-	justify-content: center;
+	margin-left: 20px;
 }
 
 #pure-u-1 {
-	display: flex;
-	justify-content: center;
+	margin-left: 50px;
 }
