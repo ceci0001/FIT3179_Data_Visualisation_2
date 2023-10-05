@@ -21,7 +21,7 @@
         }
       ]
     },{
-      "mark": {"type": "text", "radiusOffset": 10, "fill": "gray"},
+      "mark": {"type": "text", "radiusOffset": 15, "fill": "gray"},
       "encoding": {
         "text": {"field": "Unemployment_rate", "type": "quantitative"}
       }
