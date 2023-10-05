@@ -26,12 +26,13 @@
 
   <div id="general_desc">
     Ever wonder about the various informations of the different countries around the world? Here I present to 
-    you informations such as CO2 Emission, Armed Forces Size, Unemployment Rate and many more! 
+    you informations of the different countries such as CO2 Emission, Armed Forces Size, Unemployment Rate 
+    and many more! 
   </div>
 
   <div id="map_desc">
     First and foremost, the map below shows the density of 195 different countries along with their respective 
-    population.
+    population size.
   </div>
 
   <div id="choropleth_map"></div>
@@ -46,8 +47,9 @@
   </script>
 
   <div id="area_desc">
-    Curious about the argricultural and forested area distribution in each country? Well here are the 
-    discretisind scales of them!
+    Some countries have a large area of forest, while some have a large area of argriculture, or some 
+    even both. Curious which countries they are? Well here are the top 20 Countries with the highest 
+    argricultural and Forested Area individually.
   </div>
 
   <table id="subheader">
@@ -88,8 +90,8 @@
   </div>
 
     <div id="total_desc">
-      As well as the agricultural and forested area distribution, here is the disitribution of total 
-      land area of each country!
+      Since we are in the topic of land area, here are the top 20 countries with the largest total land 
+      area, which would give you an idea of the different sizes between the largest countries.
     </div>
 
     <div id="subheader1">
@@ -111,6 +113,29 @@
       </script>
     </div>
 
+  </div>
+
+  <div class="pure-g center">
+    <div class="pure-u-1-2">
+      <div id="donut_plot"></div>
+
+      <script type="text/javascript">
+
+        var donut = "visualisations/Donut Plot.vg.json";
+
+        vegaEmbed('#area3', donut).then(function(result) {
+
+        }).catch(console.error);
+
+      </script>
+    </div>
+
+    <div class="pure-u-1-2">
+      <div id="co2_desc">
+        Here are the top 20 countries with the highest CO2 emissions. This gives a clear idea on which countries 
+        are the leading contributors to global carbon emissions.
+      </div>
+    </div>
   </div>
 
 </body>
