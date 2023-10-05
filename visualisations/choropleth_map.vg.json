@@ -134,7 +134,8 @@
   ], 
   "config": {
     "legend": {
-      "orient": "bottom"
+      "orient": "bottom", 
+      "fillColor": "black"
     }
   }
 }
