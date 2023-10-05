@@ -30,12 +30,7 @@
   "encoding": {
     "theta": {"field": "Armed_Forces_size", "type": "quantitative", "stack": true},
     "color": {"field": "Country", "type": "nominal", 
-    "scale": {
-      "range": ["#fab4d5", "#bfcaf2", "#dcbfe4", "#f6b6d7", "#c3c9f0", "#d8c1e6", 
-      "#f1b8d9", "#c7c7ee", "#dfbee2", "#eeb9db", "#cdc5ec", "#d5c2e8", 
-      "#ecbadc", "#cec4eb", "#e1bee1", "#e9bbdd", "#cfc4ea", "#d2c3e9", 
-      "#e7bcde", "#d0c4ea", "#e4bddf"]
-      }
+    "scale": {"scheme": "magma"}
     }, 
     "tooltip": [
       {"field": "Country", "type": "nominal", "title":
