@@ -54,12 +54,12 @@
 	clear: both;
 }
 
-#subheader_a {
-	float: left;
+#subheader {
+	width: 100%;
 }
 
-#subheader_f {
-	float: right;
+#sub {
+	width: 50%;
 }
 
 #subheader_t {
