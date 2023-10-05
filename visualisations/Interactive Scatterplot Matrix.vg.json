@@ -3,7 +3,7 @@
   "repeat": {
     "row": ["Birth_Rate", "Fertility_Rate", "Infant_Mortality", "Maternal_Mortality_Ratio", "Life_Expectancy"],
     "column": ["Life_Expectancy", "Maternal_Mortality_Ratio", "Infant_Mortality", "Fertility_Rate", "Birth_Rate"]
-  },
+  },  
   "spec": {
     "data": {
       "url": "./data/world_clean.csv",
@@ -13,7 +13,9 @@
                           "Maternal_Mortality_Ratio": "number", 
                           "Life_Expectancy": "number", 
                           "Population": "number"}}
-    },
+    }, 
+    "height": 150, 
+    "width": 150, 
     "transform": [
         {"filter": "isValid(datum.Population)"},
         {"window": [{"op": "rank", "as": "rank"}], "sort": [{"field": "Population", "order": "descending"}]},
