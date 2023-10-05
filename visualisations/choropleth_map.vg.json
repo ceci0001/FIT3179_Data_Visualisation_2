@@ -104,7 +104,7 @@
         "format": {"type": "topojson", "feature": "oceans"}
       }, 
       "mark": {
-        "type": "geoshape", "fill": "lightblue"
+        "type": "geoshape", "fill": "lightskyblue"
       }
     }, 
     {
