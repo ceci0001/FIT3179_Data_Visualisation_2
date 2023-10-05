@@ -99,7 +99,7 @@
     }, 
     {
       "data": {
-        "url": "./data/oceans.topojson", 
+        "url": "./data/oceans.json", 
         "format": {"type": "topojson", "feature": "oceans"}
       }, 
       "mark": {
