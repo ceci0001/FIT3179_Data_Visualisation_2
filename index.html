@@ -59,35 +59,17 @@
     </tr>
   </table>
 
-  <div class="pure-g center">
-    <div class="pure-u-1-2">
-      <div id="area1"></div>
-      
-      <script type="text/javascript">
+  <div id="scale"></div>
 
-        var argricultural = "visualisations/Discretisind Scales Agricultural Land.vg.json";
+  <script type="text/javascript">
 
-        vegaEmbed('#area1', argricultural).then(function(result) {
+    var scale = "visualisations/Discretisind Scales.vg.json";
 
-        }).catch(console.error);
+    vegaEmbed('#scale', scale).then(function(result) {
 
-      </script>
-    </div>
+    }).catch(console.error);
+  </script>
 
-    <div class="pure-u-1-2">
-      <div id="area2"></div>
-
-      <script type="text/javascript">
-
-        var forested = "visualisations/Discretisind Scales Forested Area.vg.json";
-
-        vegaEmbed('#area2', forested).then(function(result) {
-
-        }).catch(console.error);
-
-      </script>
-    </div>
-  </div>
 
     <div id="total_desc">
       Since we are in the topic of land area, here are the top 20 countries with the largest total land 
