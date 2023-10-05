@@ -160,7 +160,23 @@
     </div>
   </div>
 
-  
+  <div id="rate_desc">
+    Below are the comparisons of the birth rate, fertility rate, infant mortality, maternal mortality ratio and life expectancy 
+    of the top 20 countries with the highest population. Comparing those attributes together allows for an understanding in some of 
+    the most populated countries' demographic and healthcare situation.
+  </div>
+
+  <div id="matrix_plot"></div>
+
+  <script type="text/javascript">
+
+    var matrix = "visualisations/Interactive Scatterplot Matrix.vg.json";
+
+    vegaEmbed('#matrix_plot', matrix).then(function(result) {
+
+    }).catch(console.error);
+
+  </script>
 
 </body>
 </html>
