@@ -7,14 +7,14 @@
 #general_desc {
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	text-align: center;
-	font-size: 20px;
+	font-size: 22px;
 	margin-bottom: 10px;
 }
 
 #map_desc {
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	text-align: center;
-	font-size: 20px;
+	font-size: 22px;
 	margin-bottom: 10px;
 }
 
@@ -27,7 +27,7 @@
 #area_desc {
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	text-align: center;
-	font-size: 20px;
+	font-size: 22px;
 	margin-bottom: 10px;
 	margin-top: 50px;
 }
@@ -40,7 +40,7 @@
 #total_desc {
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	text-align: center;
-	font-size: 24px;
+	font-size: 22px;
 	margin-bottom: 10px;
 	margin-top: 50px;
 }
