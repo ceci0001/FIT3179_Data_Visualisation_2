@@ -42,7 +42,7 @@
         }
       }, 
       "mark": {
-        "type": "geoshape", "fill": "lightyellow", "stroke": "white"
+        "type": "geoshape", "fill": "lightgray", "stroke": "lightyellow"
       }, 
       "encoding": {
         "tooltip": {
