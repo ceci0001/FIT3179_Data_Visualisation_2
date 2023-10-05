@@ -49,3 +49,19 @@
 	display: flex;
 	justify-content: center;
 }
+
+#subheader1 {
+	clear: both;
+}
+
+#subheader_a {
+	float: left;
+}
+
+#subheader_f {
+	float: right;
+}
+
+#subheader_t {
+	text-align: center;
+}
