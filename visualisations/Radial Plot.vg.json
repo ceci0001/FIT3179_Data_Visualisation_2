@@ -1,6 +1,5 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Top 20 Countries With Highest Unemployment Rate (In %)",
     "width": 600,
     "height": 400,
     "data": {
