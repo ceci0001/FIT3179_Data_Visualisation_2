@@ -1,6 +1,5 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Global Country Density Information",
   "width": 800,
   "height": 400,
   "projection": {"type": "equalEarth"}, 
