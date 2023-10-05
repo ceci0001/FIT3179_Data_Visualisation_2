@@ -67,7 +67,7 @@
           "scale": {
             "type": "threshold",
             "domain": [25, 50, 75, 150, 300],
-            "range": ["#fab4d5", "#ecbadc", "#e1bee1", "#d5c2e8", "#cec4eb", "#bfcaf2"]
+            "scheme": "magma"
           }
         },
         "tooltip": [
@@ -86,7 +86,7 @@
         "longitude": {"field": "Longitude", "type": "quantitative"},
         "latitude": {"field": "Latitude", "type": "quantitative"},
         "size": {"field": "Population", "type": "quantitative"},
-        "color": {"value": "steelblue"},
+        "color": {"value": "white"},
         "tooltip": [
           {"field": "properties.NAME", "type": "nominal", "title": "Country"},
           {"field": "Population", "type": "quantitative", "title": "Population"}
