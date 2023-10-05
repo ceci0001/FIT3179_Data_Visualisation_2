@@ -40,8 +40,7 @@
             "scheme": "magma"
           },
           "legend": {
-            "title": "Quantize", 
-            "orient": "top"
+            "title": "Quantize"
           }
         }
       }
@@ -76,8 +75,7 @@
           },
           "legend": {
             "format": "d",
-            "title": "Quantile", 
-            "orient": "top"
+            "title": "Quantile"
           }
         }
       }
@@ -113,8 +111,7 @@
             "scheme": "magma"
           },
           "legend": {
-            "title": "Threshold", 
-            "orient": "top"
+            "title": "Threshold"
           }
         }
       }
