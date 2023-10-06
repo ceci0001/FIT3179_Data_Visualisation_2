@@ -49,27 +49,17 @@
 	justify-content: center;
 }
 
-#subheader1 {
-	clear: both;
-}
-
 #subheader {
 	width: 100%;
 }
 
 #sub {
-	width: 50%;
+	width: 33.3%;
 	font-size: 20px;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#subheader_t {
-	text-align: center;
-	font-size: 20px;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-#area3 {
+#scale {
 	margin-bottom: 75px;
 }
 
