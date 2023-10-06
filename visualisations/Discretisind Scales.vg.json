@@ -93,9 +93,9 @@
       }, 
         "encoding": {
           "x": {"value": 0},
-          "x2": {"value": 20}, 
+          "x2": {"value": 5}, 
           "y": {"value": 0}, 
-          "y2": {"value": 20}, 
+          "y2": {"value": 5}, 
           "color": {"value": "white"}
         }}, 
         {"mark": {
@@ -103,9 +103,9 @@
         }, 
           "encoding": {
             "x": {"value": 0},
-            "x2": {"value": 20}, 
-            "y": {"value": 0}, 
-            "y2": {"value": 20}, 
+            "x2": {"value": 5}, 
+            "y": {"value": 0},  
+            "y2": {"value": 5}, 
             "color": {"value": "white"}
           }}, 
           {"mark": {
@@ -113,9 +113,9 @@
           }, 
             "encoding": {
               "x": {"value": 0},
-              "x2": {"value": 20}, 
+              "x2": {"value": 5}, 
               "y": {"value": 0}, 
-              "y2": {"value": 20}, 
+              "y2": {"value": 5}, 
               "color": {"value": "white"}
             }}, 
       {
@@ -204,9 +204,9 @@
       }, 
         "encoding": {
           "x": {"value": 0},
-          "x2": {"value": 20}, 
+          "x2": {"value": 5}, 
           "y": {"value": 0}, 
-          "y2": {"value": 20}, 
+          "y2": {"value": 5}, 
           "color": {"value": "white"}
         }},
         {"mark": {
@@ -214,9 +214,9 @@
         }, 
           "encoding": {
             "x": {"value": 0},
-            "x2": {"value": 20}, 
+            "x2": {"value": 5}, 
             "y": {"value": 0}, 
-            "y2": {"value": 20}, 
+            "y2": {"value": 5}, 
             "color": {"value": "white"}
           }}, 
           {"mark": {
@@ -224,9 +224,9 @@
           }, 
             "encoding": {
               "x": {"value": 0},
-              "x2": {"value": 20}, 
+              "x2": {"value": 5}, 
               "y": {"value": 0}, 
-              "y2": {"value": 20}, 
+              "y2": {"value": 5}, 
               "color": {"value": "white"}
             }}, 
       {
