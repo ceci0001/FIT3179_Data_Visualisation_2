@@ -14,7 +14,7 @@
       "bind": {
         "input": "range",
         "min": 0,
-        "max": 660,
+        "max": 670,
         "step": 10,
         "name": "Minimum Density: "
       }
@@ -89,7 +89,8 @@
         "color": {"value": "white"},
         "tooltip": [
           {"field": "properties.NAME", "type": "nominal", "title": "Country"},
-          {"field": "Population", "type": "quantitative", "title": "Population"}
+          {"field": "Population", "type": "quantitative", "title": "Population"}, 
+          {"field": "Density", "type": "quantitative", "title": "Density"}
         ], 
         "opacity": {
           "condition": {"param": "Country_Highlight", "value": 0.7},
