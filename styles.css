@@ -137,3 +137,9 @@
 #area_chart {
 	margin-bottom: 75px;
 }
+
+#hist_heatmap {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 75px;
+}
