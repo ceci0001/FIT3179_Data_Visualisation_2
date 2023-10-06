@@ -14,8 +14,8 @@
                           "Life_Expectancy": "number", 
                           "Population": "number"}}
     }, 
-    "height": 170, 
-    "width": 170, 
+    "height": 165, 
+    "width": 165, 
     "transform": [
         {"filter": "isValid(datum.Population)"},
         {"window": [{"op": "rank", "as": "rank"}], "sort": [{"field": "Population", "order": "descending"}]},
