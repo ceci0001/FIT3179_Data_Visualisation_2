@@ -3,7 +3,7 @@
     "width": 600,
     "height": 400,
     "data": {
-        "url": "./data/world_clean.csv", 
+        "url": "../data/world_clean.csv", 
         "format": {"parse": {"CO2_Emissions": "number"}}
     },
     "transform": [
@@ -31,7 +31,7 @@
           ]
         }, 
         "strokeWidth": 3, 
-        "point": {"fill": "gold", "size": 75, "opacity": 0.7} 
+        "point": {"fill": "darkblue", "size": 75, "opacity": 0.7} 
         }, 
         "params": [
           {
