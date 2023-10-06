@@ -1,7 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Gross Primary and Tertiary Education Enrollment Comparison of All Countries", 
-  "width": 600,
+  "width": 550,
   "height": 400,
   "data": {
     "url": "./data/world_clean.csv",
@@ -73,7 +72,7 @@
       "scale": {
         "type": "threshold",
         "domain": [10000000, 45000000, 75000000, 100000000, 1000000000],
-        "range": ["#fab4d5", "#ecbadc", "#e1bee1", "#d5c2e8", "#cec4eb", "#bfcaf2"]
+        "scheme": "magma"
         }
     }, 
     "tooltip": [

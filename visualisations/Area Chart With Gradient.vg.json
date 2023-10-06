@@ -1,6 +1,5 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Top 20 Countries With the Highest CO2 Emissions",
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json", 
     "width": 600,
     "height": 400,
     "data": {
@@ -13,7 +12,7 @@
     {"filter": "datum.rank <= 20"}],
     "mark": {
         "type": "area", 
-        "line": {"color": "#fab4d5"}, 
+        "line": {"color": "#4B2991"}, 
         "color": {
           "x1": 1,
           "y1": 1,
@@ -23,16 +22,16 @@
           "stops": [
             {
               "offset": 0,
-              "color": "#bfcaf2"
+              "color": "#5A2995"
             },
             {
               "offset": 1,
-              "color": "#fab4d5"
+              "color": "#EDD9A3"
             }
           ]
         }, 
         "strokeWidth": 3, 
-        "point": {"fill": "#bfcaf2", "size": 75} 
+        "point": {"fill": "white", "size": 75, "opacity": 0.7} 
         }, 
         "params": [
           {
