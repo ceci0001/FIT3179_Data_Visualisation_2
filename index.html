@@ -39,7 +39,7 @@
 
   <script type="text/javascript">
 
-    var choropleth_map = "visualisations/choropleth_map.vg.json";
+    var choropleth_map = "visualisations/Choropleth Map.vg.json";
 
     vegaEmbed('#choropleth_map', choropleth_map).then(function(result) {
 
@@ -89,11 +89,10 @@
     </div>
 
     <div class="pure-u-1-3">
-      <div id="co2_desc">
-        Here are the top 20 countries with the highest CO2 emissions. This gives a clear idea on which countries 
-        are the leading contributors to global carbon emissions. With this, you can understand the global 
-        landscape of carbon dioxide production, as CO2 emissions are a major factor for contributing to 
-        climate change.
+      <div id="armed_desc">
+        Here are the top 20 countries with the highest Armed Forces size. This gives a clear idea on which countries 
+        have the largest military power globally. It also gives an insight on the military strength and defense 
+        capabilities of those countries, hence understanding the distribution of military power globally.
       </div>
     </div>
 
@@ -138,6 +137,55 @@
     }).catch(console.error);
 
   </script>
+
+<div class="pure-g center">
+  <div class="pure-u-2-3">
+    <div id="area_chart"></div>
+
+    <script type="text/javascript">
+
+      var area = "visualisations/Area Chart With Gradient.vg.json";
+
+      vegaEmbed('#area_chart', area).then(function(result) {
+
+      }).catch(console.error);
+
+    </script>
+  </div>
+
+  <div class="pure-u-1-3">
+    <div id="co2_desc">
+      Here are the top 20 countries with the highest CO2 emissions. This gives a clear idea on which countries 
+      are the leading contributors to global carbon emissions. With this, you can understand the global 
+      landscape of carbon dioxide production, as CO2 emissions are a major factor for contributing to 
+      climate change.
+    </div>
+  </div>
+
+  <div class="pure-u-1-3">
+    <div id="gross_desc">
+      On the side is the gross primary and tertiary education enrollment for each country. This allows for a 
+      comparison for the country's emphasis on primary and tertiary education. Primary education are childrens 
+      who are enrolled in primary school while tertiary education are individuals who are pursuing for higher 
+      education. Comparing both attributes allows for an insight on the country's state of education.
+    </div>
+  </div>
+  
+  <div class="pure-u-2-3">
+    <div id="hist_heatmap"></div>
+
+    <script type="text/javascript">
+
+      var hist = "visualisations/2D Histogram Heatmap.vg.json";
+
+      vegaEmbed('#hist_heatmap', hist).then(function(result) {
+
+      }).catch(console.error);
+
+    </script>
+
+  </div>
+</div>
 
 </body>
 </html>

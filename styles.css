@@ -76,6 +76,16 @@
 	margin-bottom: 75px;
 }
 
+#armed_desc {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	text-align: right;
+	font-size: 22px;
+	margin-bottom: 75px;
+	margin-top: 50px;
+	padding-right: 20px;
+	padding-top: 50px;
+}
+
 #co2_desc {
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	text-align: right;
@@ -111,4 +121,14 @@
 
 #matrix_plot {
 	width: 100%;
+}
+
+#gross_desc {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	text-align: left;
+	font-size: 22px;
+	margin-top: 50px;
+	padding-left: 20px;
+	padding-top: 50px;
+	margin-bottom: 75px;
 }
