@@ -88,6 +88,18 @@
           }
         }
       }, 
+      {"mark": {
+        "type": "rect", 
+        "stroke": "white", 
+        "strokeWidth": 0
+      }, 
+        "encoding": {
+          "x": {"value": 0},
+          "x2": {"value": 5}, 
+          "y": {"value": 0}, 
+          "y2": {"value": 5}, 
+          "color": {"value": "white"}
+        }}, 
       {
         "transform": [
             {"filter": "isValid(datum.Forested_Area)"},
@@ -169,6 +181,18 @@
           }
         }
       }, 
+      {"mark": {
+        "type": "rect", 
+        "stroke": "white", 
+        "strokeWidth": 0
+      }, 
+        "encoding": {
+          "x": {"value": 0},
+          "x2": {"value": 5}, 
+          "y": {"value": 0}, 
+          "y2": {"value": 5}, 
+          "color": {"value": "white"}
+        }},
       {
         "transform": [
             {"filter": "isValid(datum.Land_Area_Km2)"},
