@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 550,
+  "width": 600,
   "height": 400,
   "data": {
     "url": "./data/world_clean.csv",

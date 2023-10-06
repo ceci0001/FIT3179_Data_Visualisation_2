@@ -135,6 +135,8 @@
 }
 
 #area_chart {
+	display: flex;
+	justify-content: center;
 	margin-bottom: 75px;
 }
 
