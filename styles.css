@@ -9,6 +9,8 @@
 	text-align: center;
 	font-size: 22px;
 	margin-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 #map_desc {
@@ -16,6 +18,8 @@
 	text-align: center;
 	font-size: 22px;
 	margin-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 #choropleth_map {
@@ -30,18 +34,13 @@
 	font-size: 22px;
 	margin-bottom: 10px;
 	margin-top: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .pure-u-1-2 {
 	display: flex;
 	justify-content: center;
-}
-
-#total_desc {
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-	text-align: center;
-	font-size: 22px;
-	margin-top: 50px;
 }
 
 .pure-u-1 {
@@ -105,6 +104,8 @@
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	font-size: 22px;
 	margin-top: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 #matrix_plot {
