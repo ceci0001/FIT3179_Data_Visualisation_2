@@ -8,45 +8,6 @@
                             "Land_Area_Km2": "number"}}
     }, 
     "hconcat": [
-      {
-        "transform": [
-            {"filter": "isValid(datum.Agricultural_Land)"},
-            {"window": [{"op": "rank", "as": "rank"}], "sort": [{"field": "Agricultural_Land", "order": "descending"}]},
-            {"filter": "datum.rank <= 23"}
-        ], 
-        "mark": "circle",
-        "encoding": {
-          "y": {
-            "field": "Agricultural_Land",
-            "type": "nominal",
-            "sort": null,
-            "axis": {
-              "ticks": false,
-              "domain": false,
-              "title": null
-            }
-          },
-          "size": {
-            "field": "Agricultural_Land",
-            "type": "quantitative",
-            "scale": {
-              "type": "quantize"
-            }
-          },
-          "color": {
-            "field": "Agricultural_Land",
-            "type": "quantitative",
-            "scale": {
-              "type": "quantize",
-              "zero": true, 
-              "scheme": "magma"
-            },
-            "legend": {
-              "title": "Quantize"
-            }
-          }
-        }
-      },
       {"transform": [
             {"filter": "isValid(datum.Agricultural_Land)"},
             {"window": [{"op": "rank", "as": "rank"}], "sort": [{"field": "Agricultural_Land", "order": "descending"}]},
@@ -149,45 +110,6 @@
             "field": "Forested_Area",
             "type": "quantitative",
             "scale": {
-              "type": "quantize"
-            }
-          },
-          "color": {
-            "field": "Forested_Area",
-            "type": "quantitative",
-            "scale": {
-              "type": "quantize",
-              "zero": true, 
-              "scheme": "magma"
-            },
-            "legend": {
-              "title": "Quantize"
-            }
-          }
-        }
-      },
-      {
-        "transform": [
-            {"filter": "isValid(datum.Forested_Area)"},
-            {"window": [{"op": "rank", "as": "rank"}], "sort": [{"field": "Forested_Area", "order": "descending"}]},
-            {"filter": "datum.rank <= 20"}
-        ], 
-        "mark": "circle",
-        "encoding": {
-          "y": {
-            "field": "Forested_Area",
-            "type": "nominal",
-            "sort": null,
-            "axis": {
-              "ticks": false,
-              "domain": false,
-              "title": null
-            }
-          },
-          "size": {
-            "field": "Forested_Area",
-            "type": "quantitative",
-            "scale": {
               "type": "quantile",
               "range": [80, 160, 240, 320, 400]
             }
@@ -247,45 +169,6 @@
           }
         }
       }, 
-      {
-        "transform": [
-            {"filter": "isValid(datum.Land_Area_Km2)"},
-            {"window": [{"op": "rank", "as": "rank"}], "sort": [{"field": "Land_Area_Km2", "order": "descending"}]},
-            {"filter": "datum.rank <= 20"}
-        ], 
-        "mark": "circle",
-        "encoding": {
-          "y": {
-            "field": "Land_Area_Km2",
-            "type": "nominal",
-            "sort": null,
-            "axis": {
-              "ticks": false,
-              "domain": false,
-              "title": null
-            }
-          },
-          "size": {
-            "field": "Land_Area_Km2",
-            "type": "quantitative",
-            "scale": {
-              "type": "quantize"
-            }
-          },
-          "color": {
-            "field": "Land_Area_Km2",
-            "type": "quantitative",
-            "scale": {
-              "type": "quantize",
-              "zero": true, 
-              "scheme": "magma"
-            },
-            "legend": {
-              "title": "Quantize"
-            }
-          }
-        }
-      },
       {
         "transform": [
             {"filter": "isValid(datum.Land_Area_Km2)"},
