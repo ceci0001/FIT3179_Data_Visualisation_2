@@ -98,6 +98,16 @@
           "y2": {"value": 20}, 
           "color": {"value": "white"}
         }}, 
+        {"mark": {
+          "type": "rect"
+        }, 
+          "encoding": {
+            "x": {"value": 0},
+            "x2": {"value": 20}, 
+            "y": {"value": 0}, 
+            "y2": {"value": 20}, 
+            "color": {"value": "white"}
+          }}, 
       {
         "transform": [
             {"filter": "isValid(datum.Forested_Area)"},
@@ -189,6 +199,16 @@
           "y2": {"value": 20}, 
           "color": {"value": "white"}
         }},
+        {"mark": {
+          "type": "rect"
+        }, 
+          "encoding": {
+            "x": {"value": 0},
+            "x2": {"value": 20}, 
+            "y": {"value": 0}, 
+            "y2": {"value": 20}, 
+            "color": {"value": "white"}
+          }}, 
       {
         "transform": [
             {"filter": "isValid(datum.Land_Area_Km2)"},
