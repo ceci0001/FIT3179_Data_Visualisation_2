@@ -24,13 +24,7 @@
       "opacity": {
         "condition": {"param": "Country_Highlight", "value": 0.7},
         "value": 0.2
-      }, 
-      "tooltip": [
-        {"field": "Country", "type": "nominal", "title":
-        "Country"},
-        {"field": "CO2_Emissions", "type": "quantitative", "title": "CO2 Emission"}, 
-        {"field": "Population", "type": "quantitative", "title": "Population"}
-      ] 
+      }
     }, 
     "layer": [
     {"mark": {
@@ -62,7 +56,15 @@
             "select": {"type": "point", "fields": ["Country"]}, 
             "bind": "scales"
           }
-        ]
+        ], 
+        "encoding": {
+          "tooltip": [
+            {"field": "Country", "type": "nominal", "title":
+            "Country"},
+            {"field": "CO2_Emissions", "type": "quantitative", "title": "CO2 Emission"}, 
+            {"field": "Population", "type": "quantitative", "title": "Population"}
+          ] 
+        }
   }, 
   {
     "mark": {

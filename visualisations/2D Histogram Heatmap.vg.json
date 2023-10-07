@@ -73,18 +73,20 @@
         "domain": [10, 25, 75, 100, 200, 400, 600],
         "scheme": "magma"
         }
-    }, 
-    "tooltip": [
-      {"field": "Country", "type": "nominal", "title":
-      "Country"},
-      {"field": "Gross_Primary_Education_Enrollment", "type": "quantitative", "title": "Gross Primary Education Enrollment (In %)"}, 
-      {"field": "Gross_Tertiary_Education_Enrollment", "type": "quantitative", "title": "Gross Tertiary Education Enrollment (In %)"}, 
-      {"field": "Density", "type": "quantitative", "title": "Density"}
-    ]
+    }
   }, 
   "layer": [
     {
-      "mark": "rect"
+      "mark": "rect", 
+      "encoding": {
+        "tooltip": [
+          {"field": "Country", "type": "nominal", "title":
+          "Country"},
+          {"field": "Gross_Primary_Education_Enrollment", "type": "quantitative", "title": "Gross Primary Education Enrollment (In %)"}, 
+          {"field": "Gross_Tertiary_Education_Enrollment", "type": "quantitative", "title": "Gross Tertiary Education Enrollment (In %)"}, 
+          {"field": "Density", "type": "quantitative", "title": "Density"}
+        ]
+      }
     }, 
     {
       "mark": {
