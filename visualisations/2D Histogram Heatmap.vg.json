@@ -3,7 +3,7 @@
   "width": 800,
   "height": 400,
   "data": {
-    "url": "./data/world_clean.csv",
+    "url": "../data/world_clean.csv",
     "format": {"parse": {"Gross_Primary_Education_Enrollment": "number", 
                           "Gross_Tertiary_Education_Enrollment": "number"}}
   }, 
@@ -66,11 +66,11 @@
       "title": "Gross Tertiary Education Enrollment (Binned and In %)"
     },
     "color": {
-      "field": "Population",
+      "field": "Density",
       "type": "quantitative", 
       "scale": {
         "type": "threshold",
-        "domain": [10000000, 45000000, 75000000, 100000000, 1000000000],
+        "domain": [10, 25, 75, 100, 200, 400, 600],
         "scheme": "magma"
         }
     }, 
@@ -79,7 +79,7 @@
       "Country"},
       {"field": "Gross_Primary_Education_Enrollment", "type": "quantitative", "title": "Gross Primary Education Enrollment (In %)"}, 
       {"field": "Gross_Tertiary_Education_Enrollment", "type": "quantitative", "title": "Gross Tertiary Education Enrollment (In %)"}, 
-      {"field": "Population", "type": "quantitative", "title": "Population"}
+      {"field": "Density", "type": "quantitative", "title": "Density"}
     ]
   }, 
   "layer": [
@@ -110,7 +110,7 @@
           "Country"},
           {"field": "Gross_Primary_Education_Enrollment", "type": "quantitative", "title": "Gross Primary Education Enrollment (In %)"}, 
           {"field": "Gross_Tertiary_Education_Enrollment", "type": "quantitative", "title": "Gross Tertiary Education Enrollment (In %)"}, 
-          {"field": "Population", "type": "quantitative", "title": "Population"}
+          {"field": "Density", "type": "quantitative", "title": "Density"}
         ]
       }
     }
