@@ -6,17 +6,19 @@
                           "Density": "number", 
                           "Urban_population": "number"}}
   },
-  "width": 800,
+  "width": 600,
   "height": 400,
   "transform": [
     {"filter": "isValid(datum.Population)"}, 
     {"filter": "isValid(datum.Density)"}, 
     {"filter": "isValid(datum.Urban_population)"}, 
-    {"window": [{"op": "rank", "as": "rank"}], "sort": [{"field": "Population", "order": "descending"}]},
+    {"window": [{"op": "rank", "as": "rank"}], "sort": [{"field": "Density", "order": "descending"}]},
     {"filter": "datum.rank <= 20"}, 
-    {"filter": "datum['Population']"},
+    {"filter": "datum['Density']"}, 
+    {"filter": "datum['Population']"}, 
     {"window": [{"op": "count", "as": "index"}]},
-    {"fold": ["Population", "Urban_population", "Density"]},
+    {"calculate": "datum.Urban_population", "as": "Urban Population"}, 
+    {"fold": ["Population", "Urban Population", "Density"]},
     {
       "joinaggregate": [
         {"op": "min", "field": "value", "as": "min"},
@@ -95,7 +97,7 @@
   }, {
     "encoding": {
       "x": {"type": "nominal", "field": "key"},
-      "y": {"value": 150}
+      "y": {"value": 200}
     },
     "layer": [{
       "mark": {"type": "text", "style": "label"},
@@ -108,7 +110,7 @@
   }, {
     "encoding": {
       "x": {"type": "nominal", "field": "key"},
-      "y": {"value": 300}
+      "y": {"value": 400}
     },
     "layer": [{
       "mark": {"type": "text", "style": "label"},
