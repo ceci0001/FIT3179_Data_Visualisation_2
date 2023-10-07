@@ -92,7 +92,7 @@
         "align": "left",
         "baseline": "middle",
         "dx": 5,
-        "fontSize": 10,
+        "fontSize": 12,
         "fontStyle": "italic"
       },
       "encoding": {
@@ -100,7 +100,7 @@
         "color": {"value": "black"},
         "opacity": {
           "condition": {
-            "test": "datum['Country'] == 'Greece' || datum['Country'] == 'Sweden' || datum['Country'] == 'Romania' || datum['Country'] == 'Morocco' || datum['Country'] == 'Moldova' || datum['Country'] == 'Russia' || datum['Country'] == 'Somalia'",
+            "test": "datum['Country'] == 'Greece' || datum['Country'] == 'Sweden' || datum['Country'] == 'Syria' || datum['Country'] == 'Morocco' || datum['Country'] == 'Moldova' || datum['Country'] == 'Russia' || datum['Country'] == 'Somalia'",
             "value": 1
           },
           "value": 0
