@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json", 
   "data": {
-    "url": "./data/world_clean.csv", 
+    "url": "../data/world_clean.csv", 
     "format": {"parse": {"Population": "number", 
                           "Density": "number", 
                           "Urban_population": "number"}}
@@ -12,8 +12,9 @@
     {"filter": "isValid(datum.Population)"}, 
     {"filter": "isValid(datum.Density)"}, 
     {"filter": "isValid(datum.Urban_population)"}, 
-    {"window": [{"op": "rank", "as": "rank"}], "sort": [{"field": "Density", "order": "descending"}]},
+    {"window": [{"op": "rank", "as": "rank"}], "sort": [{"field": "Urban_population", "order": "descending"}]},
     {"filter": "datum.rank <= 20"}, 
+    {"filter": "datum['Urban_population']"}, 
     {"filter": "datum['Density']"}, 
     {"filter": "datum['Population']"}, 
     {"window": [{"op": "count", "as": "index"}]},
