@@ -44,7 +44,11 @@
               "format": "d",
               "title": "Quantile"
             }
-          }
+          }, 
+          "tooltip": [
+            {"field": "Country", "type": "nominal", "title": "Country"}, 
+            {"field": "Agricultural_Land", "type": "quantitative", "title": "Agricultural Land"}
+          ]
         }
       },
       {
@@ -85,7 +89,11 @@
             "legend": {
               "title": "Threshold"
             }
-          }
+          }, 
+          "tooltip": [
+            {"field": "Country", "type": "nominal", "title": "Country"}, 
+            {"field": "Agricultural_Land", "type": "quantitative", "title": "Agricultural Land"}
+          ]
         }
       }, 
       {"mark": {
@@ -145,7 +153,11 @@
               "format": "d",
               "title": "Quantile"
             }
-          }
+          }, 
+          "tooltip": [
+            {"field": "Country", "type": "nominal", "title": "Country"}, 
+            {"field": "Forested_Area", "type": "quantitative", "title": "Forested Area"}
+          ]
         }
       },
       {
@@ -186,7 +198,11 @@
             "legend": {
               "title": "Threshold"
             }
-          }
+          }, 
+          "tooltip": [
+            {"field": "Country", "type": "nominal", "title": "Country"}, 
+            {"field": "Forested_Area", "type": "quantitative", "title": "Forested Area"}
+          ]
         }
       }, 
       {"mark": {
@@ -246,7 +262,11 @@
               "format": "d",
               "title": "Quantile"
             }
-          }
+          }, 
+          "tooltip": [
+            {"field": "Country", "type": "nominal", "title": "Country"}, 
+            {"field": "Land_Area_Km2", "type": "quantitative", "title": "Total Land Area (In km^2)"}
+          ]
         }
       },
       {
@@ -287,7 +307,11 @@
             "legend": {
               "title": "Threshold"
             }
-          }
+          }, 
+          "tooltip": [
+            {"field": "Country", "type": "nominal", "title": "Country"}, 
+            {"field": "Land_Area_Km2", "type": "quantitative", "title": "Total Land Area (In km^2)"}
+          ]
         }
       }
     ],
