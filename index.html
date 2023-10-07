@@ -46,6 +46,25 @@
     }).catch(console.error);
   </script>
 
+  <div id="gross_desc">
+    On the side is the gross primary and tertiary education enrollment for each country. This allows for a 
+    comparison for the country's emphasis on primary and tertiary education. Primary education are childrens 
+    who are enrolled in primary school while tertiary education are individuals who are pursuing for higher 
+    education. Comparing both attributes allows for an insight on the country's state of education.
+  </div>
+
+  <div id="hist_heatmap"></div>
+
+    <script type="text/javascript">
+
+      var hist = "visualisations/2D Histogram Heatmap.vg.json";
+
+      vegaEmbed('#hist_heatmap', hist).then(function(result) {
+
+      }).catch(console.error);
+
+    </script>
+
   <div id="area_desc">
     Some countries have a large area of forest, while some have a large area of agriculture, or some 
     even both. Curious which countries they are? Well here are the top 20 Countries with the highest 
@@ -163,22 +182,21 @@
   </div>
 
   <div class="pure-u-1-3">
-    <div id="gross_desc">
-      On the side is the gross primary and tertiary education enrollment for each country. This allows for a 
-      comparison for the country's emphasis on primary and tertiary education. Primary education are childrens 
-      who are enrolled in primary school while tertiary education are individuals who are pursuing for higher 
-      education. Comparing both attributes allows for an insight on the country's state of education.
+    <div id="pop_desc">
+      Finally, here is an insight on the top 20 countries with the highest density on their density, population and urban population. 
+      This allows for a detailed overview on the countries' demographic and urbanization details. This also visualises an understanding of 
+      those countries' demographic challenges and urban development. 
     </div>
   </div>
   
   <div class="pure-u-2-3">
-    <div id="hist_heatmap"></div>
+    <div id="parallel_plot"></div>
 
     <script type="text/javascript">
 
-      var hist = "visualisations/2D Histogram Heatmap.vg.json";
+      var parallel = "visualisations/Parallel Coordinate Plot.vg.json";
 
-      vegaEmbed('#hist_heatmap', hist).then(function(result) {
+      vegaEmbed('#parallel_plot', parallel).then(function(result) {
 
       }).catch(console.error);
 
@@ -186,25 +204,6 @@
 
   </div>
 </div>
-
-<div id="pop_desc">
-  Finally, here is an insight on the top 20 countries with the highest population on their density, population and urban population. 
-  This allows for a detailed overview on the countries' demographic and urbanization details. This also visualises an understanding of 
-  those countries' demographic challenges and urban development. 
-
-</div>
-
-<div id="parallel_plot"></div>
-
-<script type="text/javascript">
-
-  var parallel = "visualisations/Parallel Coordinate Plot.vg.json";
-
-  vegaEmbed('#parallel_plot', parallel).then(function(result) {
-
-  }).catch(console.error);
-
-</script>
 
 </body>
 </html>
