@@ -52,7 +52,6 @@
   {"filter": "datum.Gross_Primary_Education_Enrollment > GPEE_Above"}, 
   {"filter": "datum.Gross_Tertiary_Education_Enrollment > GTEE_Above"}
 ],
-  "mark": "rect",
   "encoding": {
     "x": {
       "bin": {"maxbins":60},
@@ -74,15 +73,41 @@
         "domain": [10000000, 45000000, 75000000, 100000000, 1000000000],
         "scheme": "magma"
         }
+    }
+  }, 
+  "layer": [
+    {
+      "mark": "rect"
     }, 
-    "tooltip": [
-      {"field": "Country", "type": "nominal", "title":
-      "Country"},
-      {"field": "Gross_Primary_Education_Enrollment", "type": "quantitative", "title": "Gross Primary Education Enrollment (In %)"}, 
-      {"field": "Gross_Tertiary_Education_Enrollment", "type": "quantitative", "title": "Gross Tertiary Education Enrollment (In %)"}, 
-      {"field": "Population", "type": "quantitative", "title": "Population"}
-    ]
-  },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 5,
+        "fontSize": 10,
+        "fontStyle": "italic"
+      },
+      "encoding": {
+        "text": {"field": "Country", "type": "quantitative"},
+        "color": {"value": "black"},
+        "opacity": {
+          "condition": {
+            "test": "datum['Country'] == 'Greece' || datum['Country'] == 'Sweden' || datum['Country'] == 'Romania' || datum['Country'] == 'Morocco' || datum['Country'] == 'Moldova' || datum['Country'] == 'Russia' || datum['Country'] == 'Somalia'",
+            "value": 1
+          },
+          "value": 0
+        }, 
+        "tooltip": [
+          {"field": "Country", "type": "nominal", "title":
+          "Country"},
+          {"field": "Gross_Primary_Education_Enrollment", "type": "quantitative", "title": "Gross Primary Education Enrollment (In %)"}, 
+          {"field": "Gross_Tertiary_Education_Enrollment", "type": "quantitative", "title": "Gross Tertiary Education Enrollment (In %)"}, 
+          {"field": "Population", "type": "quantitative", "title": "Population"}
+        ]
+      }
+    }
+  ],
   "config": {
     "view": {
       "stroke": "transparent"
