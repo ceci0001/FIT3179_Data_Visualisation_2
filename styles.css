@@ -173,3 +173,27 @@
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	font-size: 26px;
 }
+
+#gpee_lowest {
+	color: #721F81;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 26px;
+}
+
+#gpee_highest {
+	color: #F1605D;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 26px;
+}
+
+#gtee_lowest {
+	color: #F1605D;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 26px;
+}
+
+#gtee_highest {
+	color: #9F2F7F;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 26px;
+}
