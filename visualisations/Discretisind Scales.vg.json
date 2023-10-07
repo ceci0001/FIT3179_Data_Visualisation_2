@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "Horizontally concatenated charts that show different types of discretizing scales.",
     "data": {
-      "url": "./data/world_clean.csv", 
+      "url": "../data/world_clean.csv", 
       "format": {"parse": {"Agricultural_Land": "number", 
                             "Forested_Area": "number", 
                             "Land_Area_Km2": "number"}}
@@ -11,18 +11,20 @@
       {"transform": [
             {"filter": "isValid(datum.Agricultural_Land)"},
             {"window": [{"op": "rank", "as": "rank"}], "sort": [{"field": "Agricultural_Land", "order": "descending"}]},
-            {"filter": "datum.rank <= 23"}
+            {"filter": "datum.rank <= 23"}, 
+            {"calculate": "datum.Country + '   ' + datum.Agricultural_Land", "as": "Final"}
         ], 
         "mark": "circle",
         "encoding": {
           "y": {
-            "field": "Agricultural_Land",
+            "field": "Final",
             "type": "nominal",
             "sort": null,
             "axis": {
               "ticks": false,
               "domain": false,
-              "title": null
+              "title": null, 
+              "labelLimit": 200
             }
           },
           "size": {
@@ -47,52 +49,7 @@
           }, 
           "tooltip": [
             {"field": "Country", "type": "nominal", "title": "Country"}, 
-            {"field": "Agricultural_Land", "type": "quantitative", "title": "Agricultural Land"}
-          ]
-        }
-      },
-      {
-        "transform": [
-            {"filter": "isValid(datum.Agricultural_Land)"},
-            {"window": [{"op": "rank", "as": "rank"}], "sort": [{"field": "Agricultural_Land", "order": "descending"}]},
-            {"filter": "datum.rank <= 23"}
-        ], 
-        "mark": "circle",
-        "encoding": {
-          "y": {
-            "field": "Agricultural_Land",
-            "type": "nominal",
-            "sort": null,
-            "axis": {
-              "ticks": false,
-              "domain": false,
-              "title": null
-            }
-          },
-          "size": {
-            "field": "Agricultural_Land",
-            "type": "quantitative",
-            "scale": {
-              "type": "threshold",
-              "domain": [70, 80],
-              "range": [80, 200, 320]
-            }
-          },
-          "color": {
-            "field": "Agricultural_Land",
-            "type": "quantitative",
-            "scale": {
-              "type": "threshold",
-              "domain": [70, 80],
-              "scheme": "magma"
-            },
-            "legend": {
-              "title": "Threshold"
-            }
-          }, 
-          "tooltip": [
-            {"field": "Country", "type": "nominal", "title": "Country"}, 
-            {"field": "Agricultural_Land", "type": "quantitative", "title": "Agricultural Land"}
+            {"field": "Agricultural_Land", "type": "quantitative", "title": "Agricultural Land (In %)"}
           ]
         }
       }, 
@@ -120,18 +77,20 @@
         "transform": [
             {"filter": "isValid(datum.Forested_Area)"},
             {"window": [{"op": "rank", "as": "rank"}], "sort": [{"field": "Forested_Area", "order": "descending"}]},
-            {"filter": "datum.rank <= 20"}
+            {"filter": "datum.rank <= 20"}, 
+            {"calculate": "datum.Country + '   ' + datum.Forested_Area", "as": "Final"}
         ], 
         "mark": "circle",
         "encoding": {
           "y": {
-            "field": "Forested_Area",
+            "field": "Final",
             "type": "nominal",
             "sort": null,
             "axis": {
               "ticks": false,
               "domain": false,
-              "title": null
+              "title": null, 
+              "labelLimit": 200
             }
           },
           "size": {
@@ -156,55 +115,10 @@
           }, 
           "tooltip": [
             {"field": "Country", "type": "nominal", "title": "Country"}, 
-            {"field": "Forested_Area", "type": "quantitative", "title": "Forested Area"}
+            {"field": "Forested_Area", "type": "quantitative", "title": "Forested Area (In %)"}
           ]
         }
       },
-      {
-        "transform": [
-            {"filter": "isValid(datum.Forested_Area)"},
-            {"window": [{"op": "rank", "as": "rank"}], "sort": [{"field": "Forested_Area", "order": "descending"}]},
-            {"filter": "datum.rank <= 20"}
-        ], 
-        "mark": "circle",
-        "encoding": {
-          "y": {
-            "field": "Forested_Area",
-            "type": "nominal",
-            "sort": null,
-            "axis": {
-              "ticks": false,
-              "domain": false,
-              "title": null
-            }
-          },
-          "size": {
-            "field": "Forested_Area",
-            "type": "quantitative",
-            "scale": {
-              "type": "threshold",
-              "domain": [60, 70, 80, 90],
-              "range": [80, 160, 240, 320]
-            }
-          },
-          "color": {
-            "field": "Forested_Area",
-            "type": "quantitative",
-            "scale": {
-              "type": "threshold",
-              "domain": [60, 70, 80, 90],
-              "scheme": "magma"
-            },
-            "legend": {
-              "title": "Threshold"
-            }
-          }, 
-          "tooltip": [
-            {"field": "Country", "type": "nominal", "title": "Country"}, 
-            {"field": "Forested_Area", "type": "quantitative", "title": "Forested Area"}
-          ]
-        }
-      }, 
       {"mark": {
         "type": "rect"
       }, 
@@ -229,18 +143,20 @@
         "transform": [
             {"filter": "isValid(datum.Land_Area_Km2)"},
             {"window": [{"op": "rank", "as": "rank"}], "sort": [{"field": "Land_Area_Km2", "order": "descending"}]},
-            {"filter": "datum.rank <= 20"}
+            {"filter": "datum.rank <= 20"}, 
+            {"calculate": "datum.Country + '   ' + datum.Land_Area_Km2", "as": "Final"}
         ], 
         "mark": "circle",
         "encoding": {
           "y": {
-            "field": "Land_Area_Km2",
+            "field": "Final",
             "type": "nominal",
             "sort": null,
             "axis": {
               "ticks": false,
               "domain": false,
-              "title": null
+              "title": null, 
+              "labelLimit": 200
             }
           },
           "size": {
@@ -261,51 +177,6 @@
             "legend": {
               "format": "d",
               "title": "Quantile"
-            }
-          }, 
-          "tooltip": [
-            {"field": "Country", "type": "nominal", "title": "Country"}, 
-            {"field": "Land_Area_Km2", "type": "quantitative", "title": "Total Land Area (In km^2)"}
-          ]
-        }
-      },
-      {
-        "transform": [
-            {"filter": "isValid(datum.Land_Area_Km2)"},
-            {"window": [{"op": "rank", "as": "rank"}], "sort": [{"field": "Land_Area_Km2", "order": "descending"}]},
-            {"filter": "datum.rank <= 20"}
-        ], 
-        "mark": "circle",
-        "encoding": {
-          "y": {
-            "field": "Land_Area_Km2",
-            "type": "nominal",
-            "sort": null,
-            "axis": {
-              "ticks": false,
-              "domain": false,
-              "title": null
-            }
-          },
-          "size": {
-            "field": "Land_Area_Km2",
-            "type": "quantitative",
-            "scale": {
-              "type": "threshold",
-              "domain": [2000000, 4000000, 6000000 ,8000000, 10000000, 17000000],
-              "range": [80, 130, 180, 230, 280, 330, 380]
-            }
-          },
-          "color": {
-            "field": "Land_Area_Km2",
-            "type": "quantitative",
-            "scale": {
-              "type": "threshold",
-              "domain": [2000000, 4000000, 6000000 ,8000000, 10000000, 17000000],
-              "scheme": "magma"
-            },
-            "legend": {
-              "title": "Threshold"
             }
           }, 
           "tooltip": [
