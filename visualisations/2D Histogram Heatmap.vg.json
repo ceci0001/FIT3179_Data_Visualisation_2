@@ -73,7 +73,14 @@
         "domain": [10000000, 45000000, 75000000, 100000000, 1000000000],
         "scheme": "magma"
         }
-    }
+    }, 
+    "tooltip": [
+      {"field": "Country", "type": "nominal", "title":
+      "Country"},
+      {"field": "Gross_Primary_Education_Enrollment", "type": "quantitative", "title": "Gross Primary Education Enrollment (In %)"}, 
+      {"field": "Gross_Tertiary_Education_Enrollment", "type": "quantitative", "title": "Gross Tertiary Education Enrollment (In %)"}, 
+      {"field": "Population", "type": "quantitative", "title": "Population"}
+    ]
   }, 
   "layer": [
     {
