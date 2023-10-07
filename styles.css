@@ -161,3 +161,13 @@
 	justify-content: center;
 	margin-bottom: 75px;
 }
+
+#map_highest {
+	color: #231151;
+	font-family: 'Francois One';
+}
+
+#map_lowest {
+	color: #FEBA81;
+	font-family: 'Francois One';
+}
