@@ -1,12 +1,12 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json", 
   "data": {
     "url": "./data/world_clean.csv", 
     "format": {"parse": {"Population": "number", 
                           "Density": "number", 
                           "Urban_population": "number"}}
   },
-  "width": 700,
+  "width": 800,
   "height": 400,
   "transform": [
     {"filter": "isValid(datum.Population)"}, 
