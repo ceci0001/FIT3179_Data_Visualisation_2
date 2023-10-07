@@ -165,13 +165,11 @@
 #map_highest {
 	color: #231151;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-weight: bold;
 	font-size: 28px;
 }
 
 #map_lowest {
 	color: #FEBA81;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-weight: bold;
 	font-size: 28px;
 }
