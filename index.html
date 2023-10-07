@@ -187,5 +187,24 @@
   </div>
 </div>
 
+<div id="pop_desc">
+  Finally, here is an insight on the top 20 countries with the highest population on their density, population and urban population. 
+  This allows for a detailed overview on the countries' demographic and urbanization details. This also visualises an understanding of 
+  those countries' demographic challenges and urban development. 
+
+</div>
+
+<div class="parallel_plot"></div>
+
+<script type="text/javascript">
+
+  var parallel = "visualisations/Parallel Coordinate Plot.vg.json";
+
+  vegaEmbed('#parallel_plot', parallel).then(function(result) {
+
+  }).catch(console.error);
+
+</script>
+
 </body>
 </html>

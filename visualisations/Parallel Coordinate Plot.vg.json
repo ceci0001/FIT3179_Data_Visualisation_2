@@ -1,6 +1,5 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Population, Urban Population and Density of the Top 20 Countries With the Highest Population", 
   "data": {
     "url": "./data/world_clean.csv", 
     "format": {"parse": {"Population": "number", 
