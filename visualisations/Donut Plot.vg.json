@@ -23,7 +23,7 @@
   },{
     "mark": {"type": "text", "radius": 200, "fill": "gray", "radiusOffset": 20, "fontSize": 9, "angle": 300},
     "encoding": {
-      "text": {"field": "Country", "type": "nominal"}
+      "text": {"field": "Armed_Forces_size", "type": "quantitative"}
     }
   }],
   "encoding": {
@@ -31,15 +31,10 @@
     "color": {"field": "Country", "type": "nominal", 
     "scale": {"scheme": "magma"}
     }, 
-    "tooltip": [
-      {"field": "Country", "type": "nominal", "title":
-      "Country"},
-      {"field": "Armed_Forces_size", "type": "quantitative", "title": "Armed Forces Size"}
-  ],
-  "opacity": {
-    "condition": {"param": "Country_Highlight", "value": 1},
-    "value": 0.2
-  }
+    "opacity": {
+      "condition": {"param": "Country_Highlight", "value": 1},
+      "value": 0.2
+    }
   }
 }
   

@@ -82,13 +82,7 @@
           "value": 1
         },
         "value": 0
-      }, 
-      "tooltip": [
-        {"field": "Country", "type": "nominal", "title":
-        "Country"},
-        {"field": "CO2_Emissions", "type": "quantitative", "title": "CO2 Emission"}, 
-        {"field": "Population", "type": "quantitative", "title": "Population"}
-      ] 
+      }
     }
   }
  ]
