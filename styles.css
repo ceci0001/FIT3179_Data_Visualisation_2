@@ -11,6 +11,7 @@
 	margin-bottom: 10px;
 	padding-left: 20px;
 	padding-right: 20px;
+	line-height: 150%;
 }
 
 #map_desc {
@@ -20,6 +21,7 @@
 	margin-bottom: 10px;
 	padding-left: 20px;
 	padding-right: 20px;
+	line-height: 150%;
 }
 
 #choropleth_map {
@@ -36,6 +38,7 @@
 	margin-top: 50px;
 	padding-left: 20px;
 	padding-right: 20px;
+	line-height: 150%;
 }
 
 .pure-u-1-2 {
@@ -84,6 +87,7 @@
 	margin-top: 50px;
 	padding-right: 20px;
 	padding-top: 50px;
+	line-height: 150%;
 }
 
 #co2_desc {
@@ -94,6 +98,7 @@
 	margin-top: 50px;
 	padding-right: 20px;
 	padding-top: 50px;
+	line-height: 150%;
 }
 
 #donut_plot {
@@ -108,6 +113,7 @@
 	padding-left: 20px;
 	padding-top: 50px;
 	margin-bottom: 75px;
+	line-height: 150%;
 }
 
 #rate_desc {
@@ -117,6 +123,7 @@
 	padding-left: 20px;
 	padding-right: 20px;
 	text-align: center;
+	line-height: 150%;
 }
 
 #matrix_plot {
@@ -133,6 +140,7 @@
 	padding-left: 20px;
 	padding-top: 50px;
 	margin-bottom: 75px;
+	line-height: 150%;
 }
 
 #area_chart {
@@ -154,6 +162,7 @@
 	padding-left: 20px;
 	padding-right: 20px;
 	text-align: left;
+	line-height: 150%;
 }
 
 #parallel_plot {
