@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 600,
+  "width": 800,
   "height": 400,
   "data": {
     "url": "./data/world_clean.csv",
@@ -100,7 +100,7 @@
         "color": {"value": "black"},
         "opacity": {
           "condition": {
-            "test": "datum['Country'] == 'Greece' || datum['Country'] == 'Sweden' || datum['Country'] == 'Syria' || datum['Country'] == 'Saint Vincent and the Grenadines' || datum['Country'] == 'Moldova' || datum['Country'] == 'South Korea' || datum['Country'] == 'Somalia'",
+            "test": "datum['Country'] == 'Greece' || datum['Country'] == 'Sweden' || datum['Country'] == 'Syria' || datum['Country'] == 'Saint Vincent and the Grenadines' || datum['Country'] == 'Moldova' || datum['Country'] == 'Argentina' || datum['Country'] == 'Somalia'",
             "value": 1
           },
           "value": 0
