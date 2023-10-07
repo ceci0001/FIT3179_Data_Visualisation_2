@@ -19,7 +19,13 @@
         "select": {"type": "point", "fields": ["Country"]}, 
         "bind": "legend"
       }
-    ]
+    ], 
+    "encoding": {
+      "tooltip": [
+        {"field": "Country", "type": "nominal", "title": "Country"}, 
+        {"field": "Armed_Forces_size", "type": "quantitative", "title": "Armed Forces Size"}
+      ]
+    }
   },{
     "mark": {"type": "text", "radius": 200, "fill": "gray", "radiusOffset": 20, "fontSize": 9, "angle": 300},
     "encoding": {

@@ -19,7 +19,13 @@
           "select": {"type": "point", "fields": ["Country"]}, 
           "bind": "legend"
         }
-      ]
+      ], 
+      "encoding": {
+        "tooltip": [
+          {"field": "Country", "type": "nominal", "title": "Country"}, 
+          {"field": "Unemployment_rate", "type": "quantitative", "title": "Unemployment Rate"}
+        ]
+      }
     },{
       "mark": {"type": "text", "radiusOffset": 15, "fill": "gray"},
       "encoding": {
