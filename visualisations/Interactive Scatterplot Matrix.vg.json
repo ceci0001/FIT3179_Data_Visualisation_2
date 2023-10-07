@@ -1,8 +1,15 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json", 
+  "transform": [
+    {"calculate": "datum.Birth_Rate", "as": "Birth Rate"}, 
+    {"calculate": "datum.Fertility_Rate", "as": "Fertility Rate"}, 
+    {"calculate": "datum.Infant_Mortality", "as": "Infant Mortality"}, 
+    {"calculate": "datum.Maternal_Mortality_Ratio", "as": "Maternal Mortality Ratio"}, 
+    {"calculate": "datum.Life_Expectancy", "as": "Life Expectancy"}
+  ],
   "repeat": {
-    "row": ["Birth_Rate", "Fertility_Rate", "Infant_Mortality", "Maternal_Mortality_Ratio", "Life_Expectancy"],
-    "column": ["Life_Expectancy", "Maternal_Mortality_Ratio", "Infant_Mortality", "Fertility_Rate", "Birth_Rate"]
+    "row": ["Birth Rate", "Fertility Rate", "Infant Mortality", "Maternal Mortality Ratio", "Life Expectancy"],
+    "column": ["Life Expectancy", "Maternal Mortality Ratio", "Infant Mortality", "Fertility Rate", "Birth Rate"]
   },  
   "spec": {
     "data": {
