@@ -100,7 +100,7 @@
         "color": {"value": "black"},
         "opacity": {
           "condition": {
-            "test": "datum['Country'] == 'Greece' || datum['Country'] == 'Sweden' || datum['Country'] == 'Syria' || datum['Country'] == 'Morocco' || datum['Country'] == 'Moldova' || datum['Country'] == 'Russia' || datum['Country'] == 'Somalia'",
+            "test": "datum['Country'] == 'Greece' || datum['Country'] == 'Sweden' || datum['Country'] == 'Syria' || datum['Country'] == 'Saint Vincent and the Grenadines' || datum['Country'] == 'Moldova' || datum['Country'] == 'South Korea' || datum['Country'] == 'Somalia'",
             "value": 1
           },
           "value": 0
