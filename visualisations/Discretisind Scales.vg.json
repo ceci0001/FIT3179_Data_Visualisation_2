@@ -12,7 +12,7 @@
             {"filter": "isValid(datum.Agricultural_Land)"},
             {"window": [{"op": "rank", "as": "rank"}], "sort": [{"field": "Agricultural_Land", "order": "descending"}]},
             {"filter": "datum.rank <= 20"}, 
-            {"calculate": "datum.Country + '   ' + datum.Agricultural_Land", "as": "Final"}
+            {"calculate": "datum.Country + '   ' + datum.Agricultural_Land + '%'", "as": "Final"}
         ], 
         "mark": "circle",
         "encoding": {
@@ -78,7 +78,7 @@
             {"filter": "isValid(datum.Forested_Area)"},
             {"window": [{"op": "rank", "as": "rank"}], "sort": [{"field": "Forested_Area", "order": "descending"}]},
             {"filter": "datum.rank <= 20"}, 
-            {"calculate": "datum.Country + '   ' + datum.Forested_Area", "as": "Final"}
+            {"calculate": "datum.Country + '   ' + datum.Forested_Area + '%'", "as": "Final"}
         ], 
         "mark": "circle",
         "encoding": {
