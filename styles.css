@@ -308,3 +308,39 @@
 	font-size: 26px;
 	opacity: 0.7;
 }
+
+#den_lowest {
+	color: #FC8D64;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 26px;
+}
+
+#den_highest {
+	color: #141326;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 26px;
+}
+
+#pop_lowest {
+	color: #FEA571;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 26px;
+}
+
+#pop_highest {
+	color: #493A6F;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 26px;
+}
+
+#ur_lowest {
+	color: #FEA571;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 26px;
+}
+
+#ur_highest {
+	color: #493A6F;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 26px;
+}
