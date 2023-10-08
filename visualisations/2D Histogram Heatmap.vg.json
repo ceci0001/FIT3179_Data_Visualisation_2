@@ -9,14 +9,14 @@
   }, 
   "params": [
     {
-      "name": "Population_Above",
+      "name": "Density_Above",
       "value": 0,
       "bind": {
         "input": "range",
         "min": 0,
-        "max": 1400000000,
-        "step": 10000,
-        "name": "Minimum Population: "
+        "max": 670,
+        "step": 10,
+        "name": "Minimum Density: "
       }
     }, 
     {
@@ -48,7 +48,7 @@
       {"field": "Gross_Tertiary_Education_Enrollment", "valid": true}
     ]}
   }, 
-  {"filter": "datum.Population > Population_Above"}, 
+  {"filter": "datum.Density > Density_Above"}, 
   {"filter": "datum.Gross_Primary_Education_Enrollment > GPEE_Above"}, 
   {"filter": "datum.Gross_Tertiary_Education_Enrollment > GTEE_Above"}
 ],
