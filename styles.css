@@ -294,3 +294,17 @@
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	font-size: 26px;
 }
+
+#co2_lowest {
+	color: #3B0F70;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 26px;
+	opacity: 0.7;
+}
+
+#co2_highest {
+	color: #FECE91;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 26px;
+	opacity: 0.7;
+}

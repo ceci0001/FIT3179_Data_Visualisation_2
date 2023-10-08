@@ -3,7 +3,7 @@
     "width": 600,
     "height": 400,
     "data": {
-        "url": "./data/world_clean.csv", 
+        "url": "../data/world_clean.csv", 
         "format": {"parse": {"CO2_Emissions": "number", 
                               "Country": "string"}}
     },
@@ -61,8 +61,7 @@
           "tooltip": [
             {"field": "Country", "type": "nominal", "title":
             "Country"},
-            {"field": "CO2_Emissions", "type": "quantitative", "title": "CO2 Emission"}, 
-            {"field": "Population", "type": "quantitative", "title": "Population"}
+            {"field": "CO2_Emissions", "type": "quantitative", "title": "CO2 Emission"}
           ] 
         }
   }, 
@@ -80,7 +79,7 @@
       "color": {"value": "black"},
       "opacity": {
         "condition": {
-          "test": "datum['Country'] == 'Comoros' || datum['Country'] == 'Eritrea' || datum['Country'] == 'Somalia'",
+          "test": "datum['Country'] == 'China' || datum['Country'] == 'Poland' || datum['Country'] == 'United States of America'",
           "value": 1
         },
         "value": 0
