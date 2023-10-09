@@ -78,7 +78,7 @@
         {"field": {"repeat": "row"}, "type": "quantitative"}, 
         {"field": {"repeat": "column"}, "type": "quantitative"}, 
         {"field": "Population", "type": "quantitative", "title": "Population"}
-    ]
+      ]
     }
   }
 }
