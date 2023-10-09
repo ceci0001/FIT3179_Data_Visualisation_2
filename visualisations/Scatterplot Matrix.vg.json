@@ -24,9 +24,8 @@
                           "Life_Expectancy": "number", 
                           "Population": "number"}}
     }, 
-    "height": 160, 
-    "width": 160, 
-    "spacing": 0, 
+    "height": 150, 
+    "width": 150, 
     "mark": {
       "type": "point",
       "filled": false,
