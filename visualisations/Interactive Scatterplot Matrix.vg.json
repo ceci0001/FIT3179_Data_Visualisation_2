@@ -1,12 +1,15 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json", 
   "transform": [
+    {"filter": "isValid(datum.Population)"},
+    {"window": [{"op": "rank", "as": "rank"}], "sort": [{"field": "Population", "order": "descending"}]},
+    {"filter": "datum.rank <= 20"}, 
     {"calculate": "datum.Birth_Rate", "as": "Birth Rate"}, 
     {"calculate": "datum.Fertility_Rate", "as": "Fertility Rate"}, 
     {"calculate": "datum.Infant_Mortality", "as": "Infant Mortality"}, 
     {"calculate": "datum.Maternal_Mortality_Ratio", "as": "Maternal Mortality Ratio"}, 
     {"calculate": "datum.Life_Expectancy", "as": "Life Expectancy"}
-  ],
+  ], 
   "repeat": {
     "row": ["Birth Rate", "Fertility Rate", "Infant Mortality", "Maternal Mortality Ratio", "Life Expectancy"],
     "column": ["Life Expectancy", "Maternal Mortality Ratio", "Infant Mortality", "Fertility Rate", "Birth Rate"]
@@ -23,15 +26,11 @@
     }, 
     "height": 170, 
     "width": 170, 
-    "transform": [
-        {"filter": "isValid(datum.Population)"},
-        {"window": [{"op": "rank", "as": "rank"}], "sort": [{"field": "Population", "order": "descending"}]},
-        {"filter": "datum.rank <= 20"}
-      ], 
     "mark": {
-        "type": "point", 
-        "filled": false, 
-        "size": 100},
+      "type": "point",
+      "filled": false,
+      "size": 50
+    }, 
     "params": [
       {
         "name": "brush",
@@ -53,7 +52,7 @@
         },
         "bind": "scales"
       }
-    ],
+    ], 
     "encoding": {
       "x": {"field": {"repeat": "column"}, "type": "quantitative"},
       "y": {
