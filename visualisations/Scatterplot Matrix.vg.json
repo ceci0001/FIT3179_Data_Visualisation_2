@@ -26,11 +26,6 @@
     }, 
     "height": 150, 
     "width": 150, 
-    "mark": {
-      "type": "point",
-      "filled": false,
-      "size": 25
-    }, 
     "params": [
       {
         "name": "Country_Highlight", 
@@ -38,6 +33,12 @@
         "bind": "legend"
       }
     ], 
+    "mark": {
+      "type": "point",
+      "filled": false,
+      "size": 50, 
+      "tooltip": true
+    }, 
     "encoding": {
       "x": {"field": {"repeat": "column"}, "type": "quantitative"},
       "y": {
@@ -54,13 +55,14 @@
           "condition": {"param": "Country_Highlight", "value": 1},
           "value": 0
         }, 
-        "tooltip": [
-          {"field": "Country", "type": "nominal", "title":
-          "Country"},
-          {"field": {"repeat": "row"}, "type": "quantitative"}, 
-          {"field": {"repeat": "column"}, "type": "quantitative"}, 
-          {"field": "Population", "type": "quantitative", "title": "Population"}
-        ]
+        "tooltip": {
+          "condition": {"param": "Country_Highlight"}, 
+          "value": null
+        }, 
+        "size": {
+          "condition": {"param": "Country_Highlight"}, 
+          "value": 0
+        }
       }  
     }
   }
