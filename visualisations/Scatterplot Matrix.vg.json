@@ -42,8 +42,7 @@
       "x": {"field": {"repeat": "column"}, "type": "quantitative"},
       "y": {
         "field": {"repeat": "row"},
-        "type": "quantitative",
-        "axis": {"minExtent": 30}
+        "type": "quantitative"
       },
       "color": {
           "field": "Country", 
