@@ -250,49 +250,49 @@
 }
 
 #armed_highest {
-	color: #5F187F;
+	color: #FCE7A9;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	font-size: 26px;
 }
 
 #un_lowest {
-	color: #FED093;
+	color: #07061A;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	font-size: 26px;
 }
 
 #un_highest {
-	color: #F8765D;
+	color: #FCE7A9;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	font-size: 26px;
 }
 
 #rate_lowest_1 {
-	color: #ED8494;
+	color: #F1605D;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	font-size: 26px;
 }
 
 #rate_lowest_2 {
-	color: #D376A0;
+	color: #C03B76;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	font-size: 26px;
 }
 
 #rate_highest_1 {
-	color: #D376A0;
+	color: #C03B76;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	font-size: 26px;
 }
 
 #rate_highest_2 {
-	color: #ED8494;
+	color: #F1605D;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	font-size: 26px;
 }
 
 #rate_highest_3 {
-	color: #735898;
+	color: #4C117A;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	font-size: 26px;
 }
@@ -312,37 +312,37 @@
 }
 
 #den_lowest {
-	color: #FC8D64;
+	color: #F1605D;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	font-size: 26px;
 }
 
 #den_highest {
-	color: #141326;
+	color: #80358D;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	font-size: 26px;
 }
 
 #pop_lowest {
-	color: #FEA571;
+	color: #07061A;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	font-size: 26px;
 }
 
 #pop_highest {
-	color: #493A6F;
+	color: #FCE7A9;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	font-size: 26px;
 }
 
 #ur_lowest {
-	color: #FEA571;
+	color: #07061A;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	font-size: 26px;
 }
 
 #ur_highest {
-	color: #493A6F;
+	color: #FCE7A9;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	font-size: 26px;
 }
