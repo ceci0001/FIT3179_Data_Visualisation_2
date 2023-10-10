@@ -9,7 +9,8 @@
   "transform": [
       {"filter": "isValid(datum.Armed_Forces_size)"},
       {"window": [{"op": "rank", "as": "rank"}], "sort": [{"field": "Armed_Forces_size", "order": "descending"}]},
-      {"filter": "datum.rank <= 20"}
+      {"filter": "datum.rank <= 20"}, 
+      {"calculate": "datum.Armed_Forces_size", "as": "Final"}
     ], 
   "layer": [{
     "mark": {"type": "arc", "innerRadius": 100, "stroke": "#fff"}, 
@@ -29,13 +30,16 @@
   },{
     "mark": {"type": "text", "radius": 200, "fill": "gray", "radiusOffset": 20, "fontSize": 9, "angle": 300},
     "encoding": {
-      "text": {"field": "Armed_Forces_size", "type": "quantitative"}
+      "text": {"field": "Final"}
     }
   }],
   "encoding": {
     "theta": {"field": "Armed_Forces_size", "type": "quantitative", "stack": true},
     "color": {"field": "Country", "type": "nominal", 
-    "scale": {"scheme": "magma"}
+      "scale": {
+        "scheme": "magma"
+      }, 
+      "sort": {"field": "Armed_Forces_size"}
     }, 
     "opacity": {
       "condition": {"param": "Country_Highlight", "value": 1},

@@ -55,7 +55,8 @@
       "color": {"type": "nominal", "field": "Country", 
         "scale": {
         "scheme": "magma"
-        }
+        }, 
+        "sort": {"field": "Urban_population"}
       }, 
     "opacity": {
       "condition": {"param": "Country_Highlight", "value": 1},
