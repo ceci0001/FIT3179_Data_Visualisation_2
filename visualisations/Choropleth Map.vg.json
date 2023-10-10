@@ -150,7 +150,9 @@
           {"name": "Pacific Ocean", "longitude": -165, "latitude": 0},
           {"name": "Indian Ocean", "longitude": 60, "latitude": 0},
           {"name": "Arctic Ocean", "longitude": -175, "latitude": 80},
-          {"name": "Southern Ocean", "longitude": 0, "latitude": -60}
+          {"name": "Southern Ocean", "longitude": 0, "latitude": -60}, 
+          {"name": "Lebanon", "longitude": 35.862285, "latitude": 33.854721}, 
+          {"name": "Mongolia", "longitude": 103.846656, "latitude": 46.862496}
         ]
       },
       "mark": {"type": "text", "align": "left", "baseline": "middle", "fontSize": 12},
