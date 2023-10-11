@@ -160,7 +160,7 @@
         "longitude": {"field": "longitude", "type": "quantitative"},
         "latitude": {"field": "latitude", "type": "quantitative"},
         "text": {"field": "name", "type": "nominal"},
-        "color": {"value": "black"}
+        "color": {"value": "white"}
       }
     }
   ], 
