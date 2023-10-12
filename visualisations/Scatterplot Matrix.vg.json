@@ -10,6 +10,7 @@
     {"calculate": "datum.Maternal_Mortality_Ratio", "as": "Maternal Mortality Ratio"}, 
     {"calculate": "datum.Life_Expectancy", "as": "Life Expectancy"}
   ], 
+  "background": "transparent", 
   "repeat": {
     "row": ["Birth Rate", "Fertility Rate", "Infant Mortality", "Maternal Mortality Ratio", "Life Expectancy"],
     "column": ["Life Expectancy", "Maternal Mortality Ratio", "Infant Mortality", "Fertility Rate", "Birth Rate"]
