@@ -4,6 +4,10 @@
 	font-size: 30px;
 }
 
+#body {
+	background-color: #EBE8FC;
+}
+
 #general_desc {
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	text-align: center;
