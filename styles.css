@@ -90,7 +90,7 @@
 	margin-bottom: 75px;
 	padding-right: 20px;
 	line-height: 150%;
-	margin-top: 30px;
+	margin-top: 110px;
 }
 
 #co2_desc {
@@ -100,7 +100,7 @@
 	margin-bottom: 75px;
 	padding-right: 20px;
 	line-height: 150%;
-	margin-top: 20px;
+	margin-top: 90px;
 	padding-top: 20px;
 }
 
@@ -115,7 +115,7 @@
 	padding-left: 20px;
 	margin-bottom: 75px;
 	line-height: 150%;
-	margin-top: 20px;
+	margin-top: 100px;
 }
 
 #rate_desc {
@@ -167,6 +167,7 @@
 	padding-right: 20px;
 	text-align: left;
 	line-height: 150%;
+	margin-top: 80px;
 }
 
 #parallel_plot {
