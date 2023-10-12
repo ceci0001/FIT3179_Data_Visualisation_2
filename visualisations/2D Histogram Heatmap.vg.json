@@ -73,6 +73,10 @@
         "type": "threshold",
         "domain": [10, 25, 75, 100, 200, 400, 600],
         "scheme": "magma"
+        }, 
+        "legend": {
+          "fillColor": "lightgray", 
+          "padding": 5
         }
     }
   }, 
@@ -86,13 +90,7 @@
           {"field": "Gross_Primary_Education_Enrollment", "type": "quantitative", "title": "Gross Primary Education Enrollment (In %)"}, 
           {"field": "Gross_Tertiary_Education_Enrollment", "type": "quantitative", "title": "Gross Tertiary Education Enrollment (In %)"}, 
           {"field": "Density", "type": "quantitative", "title": "Density"}
-        ], 
-        "color": {
-          "legend": {
-            "fillColor": "lightgray", 
-            "padding": 5
-          }
-        }
+        ]
       }
     }, 
     {
