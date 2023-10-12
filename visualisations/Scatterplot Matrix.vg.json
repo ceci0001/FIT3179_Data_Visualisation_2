@@ -51,7 +51,11 @@
           "scale": {
             "scheme": "magma"
             }, 
-            "sort": {"field": "Population"}
+            "sort": {"field": "Population"}, 
+            "legend": {
+              "fillColor": "lightgray", 
+              "padding": 5
+            }
         }, 
         "opacity": {
           "condition": {"param": "Country_Highlight", "value": 1},

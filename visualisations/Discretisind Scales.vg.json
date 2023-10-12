@@ -45,7 +45,9 @@
             },
             "legend": {
               "format": "d",
-              "title": "Quantile"
+              "title": "Quantile", 
+              "fillColor": "lightgray", 
+              "padding": 5
             }
           }, 
           "tooltip": [
@@ -111,7 +113,9 @@
             },
             "legend": {
               "format": "d",
-              "title": "Quantile"
+              "title": "Quantile", 
+              "fillColor": "lightgray", 
+              "padding": 5
             }
           }, 
           "tooltip": [
@@ -177,7 +181,9 @@
             },
             "legend": {
               "format": "d",
-              "title": "Quantile"
+              "title": "Quantile", 
+              "fillColor": "lightgray", 
+              "padding": 5
             }
           }, 
           "tooltip": [

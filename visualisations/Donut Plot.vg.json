@@ -40,7 +40,11 @@
       "scale": {
         "scheme": "magma"
       }, 
-      "sort": {"field": "Armed_Forces_size"}
+      "sort": {"field": "Armed_Forces_size"}, 
+      "legend": {
+        "fillColor": "lightgray", 
+        "padding": 5
+      }
     }, 
     "opacity": {
       "condition": {"param": "Country_Highlight", "value": 1},

@@ -86,7 +86,13 @@
           {"field": "Gross_Primary_Education_Enrollment", "type": "quantitative", "title": "Gross Primary Education Enrollment (In %)"}, 
           {"field": "Gross_Tertiary_Education_Enrollment", "type": "quantitative", "title": "Gross Tertiary Education Enrollment (In %)"}, 
           {"field": "Density", "type": "quantitative", "title": "Density"}
-        ]
+        ], 
+        "color": {
+          "legend": {
+            "fillColor": "lightgray", 
+            "padding": 5
+          }
+        }
       }
     }, 
     {

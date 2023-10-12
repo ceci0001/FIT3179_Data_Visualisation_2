@@ -31,6 +31,10 @@
         }, 
         "sort": {
             "field": "CO2_Emissions"
+        }, 
+        "legend": {
+          "fillColor": "lightgray", 
+          "padding": 5
         }
       }, 
       "tooltip": [

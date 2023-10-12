@@ -41,7 +41,11 @@
         "scale": {
           "scheme": "magma"
         }, 
-        "sort": {"field": "Unemployment_rate"}
+        "sort": {"field": "Unemployment_rate"}, 
+        "legend": {
+          "fillColor": "lightgray", 
+          "padding": 5
+        }
       }, 
       "opacity": {
         "condition": {"param": "Country_Highlight", "value": 1},

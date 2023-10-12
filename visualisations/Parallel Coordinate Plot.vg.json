@@ -57,7 +57,11 @@
         "scale": {
         "scheme": "magma"
         }, 
-        "sort": {"field": "Urban_population"}
+        "sort": {"field": "Urban_population"}, 
+        "legend": {
+          "fillColor": "lightgray", 
+          "padding": 5
+        }
       }, 
     "opacity": {
       "condition": {"param": "Country_Highlight", "value": 1},
