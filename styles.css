@@ -157,6 +157,7 @@
 	display: flex;
 	justify-content: center;
 	margin-bottom: 75px;
+	text-align: center;
 }
 
 #pop_desc {
@@ -176,81 +177,55 @@
 }
 
 #map_highest {
-	color: #FEBA81;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 26px;
 }
 
 #map_lowest {
-	color: #231151;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 26px;
 }
 
 #gpee_lowest {
-	color: #721F81;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 26px;
 }
 
 #gpee_highest {
-	color: #F1605D;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 26px;
 }
 
 #gtee_lowest {
-	color: #F1605D;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 26px;
 }
 
 #gtee_highest {
-	color: #9F2F7F;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 26px;
 }
 
 #agri_lowest {
-	color: #2C1160;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 26px;
 }
 
 #agri_highest {
-	color: #FEAF78;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 26px;
 }
 
 #for_lowest {
-	color: #2C1160;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 26px;
 }
 
 #for_highest {
-	color: #FEAF78;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 26px;
 }
 
 #total_lowest {
-	color: #2C1160;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 26px;
 }
 
 #total_highest {
-	color: #FEAF78;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 26px;
 }
 
 #armed_lowest {
-	color: #07061A;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 26px;
 }
 
 #armed_highest {
@@ -260,95 +235,63 @@
 }
 
 #un_lowest {
-	color: #07061A;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 26px;
 }
 
 #un_highest {
-	color: #FCE7A9;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 26px;
 }
 
 #rate_lowest_1 {
-	color: #F1605D;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 26px;
 }
 
 #rate_lowest_2 {
-	color: #C03B76;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 26px;
 }
 
 #rate_highest_1 {
-	color: #C03B76;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 26px;
 }
 
 #rate_highest_2 {
-	color: #F1605D;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 26px;
 }
 
 #rate_highest_3 {
-	color: #4C117A;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 26px;
 }
 
 #co2_lowest {
-	color: #3B0F70;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 26px;
-	opacity: 0.7;
 }
 
 #co2_highest {
-	color: #FECE91;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 26px;
-	opacity: 0.7;
 }
 
 #den_lowest {
-	color: #F1605D;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 26px;
 }
 
 #den_highest {
-	color: #80358D;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 26px;
 }
 
 #pop_lowest {
-	color: #07061A;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 26px;
 }
 
 #pop_highest {
-	color: #FCE7A9;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 26px;
 }
 
 #ur_lowest {
-	color: #07061A;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 26px;
 }
 
 #ur_highest {
-	color: #FCE7A9;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 26px;
 }
 
 #ref {
@@ -357,13 +300,11 @@
 }
 
 #title {
-	color: #353839;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	font-size: 26px;
 }
 
 #main {
-	color: #353839;
-	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	font-size: 50px;
 }
