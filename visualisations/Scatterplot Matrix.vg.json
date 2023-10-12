@@ -10,65 +10,89 @@
     {"calculate": "datum.Maternal_Mortality_Ratio", "as": "Maternal Mortality Ratio"}, 
     {"calculate": "datum.Life_Expectancy", "as": "Life Expectancy"}
   ], 
+  "data": {
+    "url": "./data/world_clean.csv",
+    "format": {"parse": {"Birth_Rate": "number", 
+                        "Fertility_Rate": "number", 
+                        "Infant_Mortality": "number", 
+                        "Maternal_Mortality_Ratio": "number", 
+                        "Life_Expectancy": "number", 
+                        "Population": "number"}}
+  }, 
   "background": "transparent", 
   "repeat": {
     "row": ["Birth Rate", "Fertility Rate", "Infant Mortality", "Maternal Mortality Ratio", "Life Expectancy"],
     "column": ["Life Expectancy", "Maternal Mortality Ratio", "Infant Mortality", "Fertility Rate", "Birth Rate"]
   },  
   "spec": {
-    "data": {
-      "url": "./data/world_clean.csv",
-      "format": {"parse": {"Birth_Rate": "number", 
-                          "Fertility_Rate": "number", 
-                          "Infant_Mortality": "number", 
-                          "Maternal_Mortality_Ratio": "number", 
-                          "Life_Expectancy": "number", 
-                          "Population": "number"}}
-    }, 
     "height": 145, 
     "width": 145, 
-    "params": [
+    "layer": [
       {
-        "name": "Country_Highlight", 
-        "select": {"type": "point", "fields": ["Country"]}, 
-        "bind": "legend"
-      }
-    ], 
-    "mark": {
-      "type": "point",
-      "filled": false,
-      "size": 50, 
-      "tooltip": true
-    }, 
-    "encoding": {
-      "x": {"field": {"repeat": "column"}, "type": "quantitative"},
-      "y": {
-        "field": {"repeat": "row"},
-        "type": "quantitative"
-      },
-      "color": {
-          "field": "Country", 
-          "scale": {
-            "scheme": "magma"
+        "mark": {
+          "type": "point",
+          "filled": false,
+          "size": 50, 
+          "tooltip": true, 
+          "line": true
+        }, 
+        "params": [
+          {
+            "name": "Country_Highlight", 
+            "select": {"type": "point", "fields": ["Country"]}, 
+            "bind": "legend"
+          }
+        ], 
+        "encoding": {
+          "x": {"field": {"repeat": "column"}, "type": "quantitative"},
+          "y": {
+            "field": {"repeat": "row"},
+            "type": "quantitative"
+          },
+          "color": {
+              "field": "Country", 
+              "scale": {
+                "scheme": "magma"
+                }, 
+                "sort": {"field": "Population"}, 
+                "legend": {
+                  "fillColor": "lightgray", 
+                  "padding": 5
+                }
             }, 
-            "sort": {"field": "Population"}, 
-            "legend": {
-              "fillColor": "lightgray", 
-              "padding": 5
+            "opacity": {
+              "condition": {"param": "Country_Highlight", "value": 1},
+              "value": 0
+            }, 
+            "tooltip": {
+              "condition": {"param": "Country_Highlight"}, 
+              "value": null
+            }, 
+            "size": {
+              "condition": {"param": "Country_Highlight"}, 
+              "value": 0
             }
+          }
+      }, 
+      {
+        "mark": {
+          "type": "line", 
+          "color":"gray"
         }, 
-        "opacity": {
-          "condition": {"param": "Country_Highlight", "value": 1},
-          "value": 0
-        }, 
-        "tooltip": {
-          "condition": {"param": "Country_Highlight"}, 
-          "value": null
-        }, 
-        "size": {
-          "condition": {"param": "Country_Highlight"}, 
-          "value": 0
+        "encoding": {
+          "x": {
+            "field": {"repeat": "column"},
+            "type": "quantitative"
+          },
+          "y": {
+            "field": {"repeat": "row"},
+            "type": "quantitative"
+          }
         }
-      }  
+      }
+    ]
+    
+    
+    
     }
   }
