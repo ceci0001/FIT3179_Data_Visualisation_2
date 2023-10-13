@@ -8,7 +8,7 @@
         {"window": [{"op": "rank", "as": "rank"}], "sort": [{"field": "CO2_Emissions", "order": "descending"}]},
         {"filter": "datum.rank <= 20"}, 
         {"calculate": "'China has the highest CO2 emissions'", "as": "Final1"}, 
-        {"calculate": "'Poland has the lowest CO2 emissions'", "as": "Final2"}
+        {"calculate": "split('Poland has the lowest CO2 emissions', ' ')", "as": "Final2"}
     ],
     "data": {
         "url": "./data/world_clean.csv", 
@@ -80,7 +80,7 @@
           "align": "left",
           "baseline": "middle",
           "dx": 1, 
-          "dy": -10, 
+          "dy": -80, 
           "fontSize": 12,
           "fontStyle": "italic"
         },
