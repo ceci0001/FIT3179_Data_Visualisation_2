@@ -35,7 +35,6 @@
 	display: flex;
 	justify-content: center;
 	text-align: center;
-	width: 900px;
 }
 
 #area_desc {
@@ -110,6 +109,8 @@
 
 #donut_plot {
 	margin-bottom: 75px;
+	display: flex;
+	justify-content: center;
 }
 
 #un_desc {
