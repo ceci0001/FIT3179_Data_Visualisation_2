@@ -64,7 +64,7 @@
           "x2": {"value": 5}, 
           "y": {"value": 0}, 
           "y2": {"value": 5}, 
-          "color": {"value": "white"}
+          "color": {"value": "#EBE8FC"}
         }}, 
         {"mark": {
           "type": "rect"
@@ -74,7 +74,7 @@
             "x2": {"value": 5}, 
             "y": {"value": 0},  
             "y2": {"value": 5}, 
-            "color": {"value": "white"}
+            "color": {"value": "#EBE8FC"}
           }}, 
       {
         "transform": [
@@ -132,7 +132,7 @@
           "x2": {"value": 5}, 
           "y": {"value": 0}, 
           "y2": {"value": 5}, 
-          "color": {"value": "white"}
+          "color": {"value": "#EBE8FC"}
         }},
         {"mark": {
           "type": "rect"
@@ -142,7 +142,7 @@
             "x2": {"value": 5}, 
             "y": {"value": 0}, 
             "y2": {"value": 5}, 
-            "color": {"value": "white"}
+            "color": {"value": "#EBE8FC"}
           }}, 
       {
         "transform": [
