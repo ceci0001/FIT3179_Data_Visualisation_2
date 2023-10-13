@@ -4,6 +4,10 @@
 	font-size: 30px;
 }
 
+#body {
+	background-color: #FFFBF7;
+}
+
 #page {
 	margin-left: 50px;
 	margin-right: 50px;
