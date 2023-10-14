@@ -15,10 +15,7 @@
     {"filter": "isValid(datum.Urban_population)"}, 
     {"window": [{"op": "rank", "as": "rank"}], "sort": [{"field": "Urban_population", "order": "descending"}]},
     {"filter": "datum.rank <= 20"}, 
-    {"filter": "datum['Urban_population']"}, 
-    {"filter": "datum['Density']"}, 
-    {"filter": "datum['Population']"}, 
-    {"window": [{"op": "count", "as": "index"}]},
+      
     {"calculate": "datum.Urban_population", "as": "Urban Population"}, 
     {"fold": ["Population", "Urban Population", "Density"]},
     {
@@ -94,7 +91,7 @@
       "y": {"value": 0}
     },
     "layer": [{
-      "mark": {"type": "text", "style": "label"},
+      "mark": {"type": "text", "style": "label", "baseline": "middle", "align": "right", "dx": -5, "orient": "horizontal"},
       "encoding": {
         "text": {"aggregate": "max", "field": "max"}
       }
@@ -107,9 +104,9 @@
       "y": {"value": 200}
     },
     "layer": [{
-      "mark": {"type": "text", "style": "label"},
+      "mark": {"type": "text", "style": "label", "baseline": "middle", "align": "right", "dx": -5, "orient": "horizontal"},
       "encoding": {
-        "text": {"aggregate": "min", "field": "mid"}
+        "text": {"aggregate": "median", "field": "mid"}
       }
     }, {
       "mark": {"type": "tick", "style": "tick", "size": 8, "color": "#ccc"}
@@ -120,7 +117,7 @@
       "y": {"value": 400}
     },
     "layer": [{
-      "mark": {"type": "text", "style": "label"},
+      "mark": {"type": "text", "style": "label", "baseline": "middle", "align": "right", "dx": -5, "orient": "horizontal"},
       "encoding": {
         "text": {"aggregate": "min", "field": "min"}
       }
@@ -130,10 +127,6 @@
   }],
   "config": {
     "axisX": {"domain": false, "labelAngle": 0, "tickColor": "#ccc", "title": null},
-    "view": {"stroke": null},
-    "style": {
-      "label": {"baseline": "middle", "align": "right", "dx": -5},
-      "tick": {"orient": "horizontal"}
-    }
+    "view": {"stroke": null}
   }
 }
