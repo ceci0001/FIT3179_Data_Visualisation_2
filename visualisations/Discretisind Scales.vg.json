@@ -44,7 +44,6 @@
               "scheme": "magma"
             },
             "legend": {
-              "format": "d",
               "title": "Quantile", 
               "fillColor": "lightgray", 
               "padding": 5
@@ -112,7 +111,6 @@
               "scheme": "magma"
             },
             "legend": {
-              "format": "d",
               "title": "Quantile", 
               "fillColor": "lightgray", 
               "padding": 5
@@ -180,7 +178,6 @@
               "scheme": "magma"
             },
             "legend": {
-              "format": "d",
               "title": "Quantile", 
               "fillColor": "lightgray", 
               "padding": 5
